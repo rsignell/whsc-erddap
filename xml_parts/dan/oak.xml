@@ -1,0 +1,323 @@
+<!--
+ DISCLAIMER:
+   The chunk of datasets.xml made by GenerageDatasetsXml isn't perfect.
+   YOU MUST READ AND EDIT THE XML BEFORE USING IT IN A PUBLIC ERDDAP.
+   GenerateDatasetsXml relies on a lot of rules-of-thumb which aren't always
+   correct.  *YOU* ARE RESPONSIBLE FOR ENSURING THE CORRECTNESS OF THE XML
+   THAT YOU ADD TO ERDDAP'S datasets.xml FILE.
+
+ DIRECTIONS:
+ * Read about this type of dataset in
+   https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html .
+ * Read https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#addAttributes
+   so that you understand about sourceAttributes and addAttributes.
+ * Note: Global sourceAttributes and variable sourceAttributes are listed
+   below as comments, for informational purposes only.
+   ERDDAP combines sourceAttributes and addAttributes (which have
+   precedence) to make the combinedAttributes that are shown to the user.
+   (And other attributes are automatically added to longitude, latitude,
+   altitude, depth, and time variables).
+ * If you don't like a sourceAttribute, overwrite it by adding an
+   addAttribute with the same name but a different value
+   (or no value, if you want to remove it).
+ * All of the addAttributes are computer-generated suggestions. Edit them!
+   If you don't like an addAttribute, change it.
+ * If you want to add other addAttributes, add them.
+ * If you want to change a destinationName, change it.
+   But don't change sourceNames.
+ * You can change the order of the dataVariables or remove any of them.
+-->
+
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="pswl-oak" active="true">
+    <reloadEveryNMinutes>60</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/pswl/</fileDir>
+    <fileNameRegex>oak.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <preExtractRegex></preExtractRegex>
+    <postExtractRegex></postExtractRegex>
+    <extractRegex></extractRegex>
+    <columnNameForExtract></columnNameForExtract>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="Conventions">CF-1.6</att>
+        <att name="elev_offset" type="double">-1.735</att>
+        <att name="featureType">timeSeries</att>
+        <att name="history">Generated using gamone_holo.py</att>
+        <att name="institution">U.S. Geological Survey</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="original_folder">pswl</att>
+        <att name="title">PSWL Oak Harbor. PROVISIONAL DATA SUBJECT TO REVISION.</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+        <att name="subsetVariables">station, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, COARDS, ACDD-1.3</att>
+        <att name="creator_name">U.S. Geological Survey</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="infoUrl">https://www.usgs.gov/</att>
+        <att name="keywords">1/48h, 48h, 5th, acceleration, battery, board, boardbatt, boardtemp, butterworth, code, conductivity, cutoff, data, density, depth, earth, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Conductivity, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Density, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, electrical, feature_type_instance, fifth, filter, filtered, frequency, geological, gravitational, harbor, identifier, latitude, level, logger, longitude, low, low-pass, lpwaterlevel, navd88, oak, ocean, oceans, order, pass, practical, pressure, provisional, pswl, relative, revision, salinity, science, sea, sea level, sea_water_density, sea_water_electrical_conductivity, sea_water_practical_salinity, sea_water_temperature, seawater, station, subject, survey, temperature, time, transducer, US, voltage, water, waterlevel, with</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
+        <att name="subsetVariables">longitude, latitude, g, feature_type_instance</att>
+        <att name="summary">PSWL Oak Harbor. PROVISIONAL DATA SUBJECT TO REVISION.</att>
+        <att name="testOutOfDate">now-1day</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="standard_name">time</att>
+            <att name="units">minutes since 2018-11-07 20:00:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time</att>
+            <att name="units">minutes since 2018-11-07T20:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="long_name">longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="long_name">latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>pressure</sourceName>
+        <destinationName>pressure</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="long_name">Pressure of water at pressure transducer</att>
+            <att name="units">kilopascal</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Pressure</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>temperature</sourceName>
+        <destinationName>temperature</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="units">degree_C</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Water Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>conductivity</sourceName>
+        <destinationName>conductivity</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="standard_name">sea_water_electrical_conductivity</att>
+            <att name="units">uS cm-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">40.0</att>
+            <att name="colorBarMinimum" type="double">30.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">Sea Water Electrical Conductivity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>boardbatt</sourceName>
+        <destinationName>boardbatt</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="long_name">Logger board battery voltage</att>
+            <att name="units">V</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>boardtemp</sourceName>
+        <destinationName>boardtemp</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="long_name">Logger board temperature</att>
+            <att name="units">degree_C</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">40.0</att>
+            <att name="colorBarMinimum" type="double">-10.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Temperature</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>salinity</sourceName>
+        <destinationName>salinity</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="standard_name">sea_water_practical_salinity</att>
+            <att name="units">1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">37.0</att>
+            <att name="colorBarMinimum" type="double">32.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">Sea Water Practical Salinity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>density</sourceName>
+        <destinationName>density</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="standard_name">sea_water_density</att>
+            <att name="units">kg m-3</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">28.0</att>
+            <att name="colorBarMinimum" type="double">20.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">Sea Water Density</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>g</sourceName>
+        <destinationName>g</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="long_name">Gravitational acceleration</att>
+            <att name="units">m s-2</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Unknown</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>depth</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Depth</att>
+            <att name="standard_name">depth</att>
+            <att name="units">m</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>waterlevel</sourceName>
+        <destinationName>waterlevel</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="long_name">Water level relative to NAVD88</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Sea Level</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>lpwaterlevel</sourceName>
+        <destinationName>lpwaterlevel</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="long_name">Low-pass filtered water level relative to NAVD88. 5th order Butterworth filter with cutoff frequency of 1/48h.</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Sea Level</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="long_name">station code</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

@@ -1,0 +1,516 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="PRI17SBT03rbr-wvs">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-P9IXOHID/</fileDir>
+    <fileNameRegex>PRI17SBT03rbr-wvs.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="atmospheric_pressure_correction_method">Time Series</att>
+        <att name="basefilename">055067_20180116_0720</att>
+        <att name="burst_interval" type="double">3600.0</att>
+        <att name="burst_length" type="double">1024.0</att>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="clock_error" type="double">18.0</att>
+        <att name="CollaboratingAgency">UPR Mayaguez</att>
+        <att name="COMPOSITE" type="double">0.0</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHIC</att>
+        <att name="CREATION_DATE">15-Feb-2018 13:58:04</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="CruiseID">2017-618-FA</att>
+        <att name="DATA_ORIGIN">USGS WCMG Sed Trans Group</att>
+        <att name="DATA_SUBTYPE">MOORED</att>
+        <att name="DATA_TYPE">TIME</att>
+        <att name="datasetID">PRI17SBT03rbr-wvs</att>
+        <att name="date_created">2018-02-15T13:58:04</att>
+        <att name="Deployment_date">11-Jul-2017 14:00</att>
+        <att name="DEPTH_CONST" type="double">0.0</att>
+        <att name="DESCRIPT">unknown</att>
+        <att name="DESCRIPTION">UPR shelf break ADCP tripod</att>
+        <att name="DRIFTER" type="double">0.0</att>
+        <att name="EXPERIMENT">Guanica Bay + MCE reefs</att>
+        <att name="experiment_id">PRI17</att>
+        <att name="external_atmospheric_pressure_file">../../metdata/MonaIsland/MonaMetData.nc</att>
+        <att name="featureType">timeSeries</att>
+        <att name="FILL_FLAG" type="double">1.0E35</att>
+        <att name="geospatial_lat_max" type="double">17.885717</att>
+        <att name="geospatial_lat_min" type="double">17.885717</att>
+        <att name="geospatial_lon_max" type="double">-67.023133</att>
+        <att name="geospatial_lon_min" type="double">-67.023133</att>
+        <att name="good_bursts" type="doubleList">1215.0 4623.0</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_P9IXOHID.ipynb; </att>
+        <att name="id">PRI17SBT03rbr-wvs</att>
+        <att name="initial_instrument_height" type="double">0.3</att>
+        <att name="INST_TYPE">RBR Virtuoso Wave Gauge</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="instrument_manufacturer">RBR</att>
+        <att name="instrument_number">PRI17SBT03</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="latitude" type="double">17.885717</att>
+        <att name="longitude" type="double">-67.023133</att>
+        <att name="magnetic_variation" type="double">-12.75</att>
+        <att name="metadata_link">https://doi.org/10.5066/P9IXOHID</att>
+        <att name="mode">wave</att>
+        <att name="MOORING">PRI17SBT</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="number_of_bursts" type="double">3409.0</att>
+        <att name="platform_type">spider tripod</att>
+        <att name="POS_CONST" type="double">0.0</att>
+        <att name="PROGRAM">Coral Reefs</att>
+        <att name="PROJECT">Puerto Rico</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="raw_filename">055067_20180116_0720.rsk</att>
+        <att name="Recovery_date">30-Nov-2017 13:00</att>
+        <att name="Region">Caribbean Sea</att>
+        <att name="sample_interval" type="double">0.25</att>
+        <att name="samples_per_burst" type="double">4096.0</att>
+        <att name="SciPi">Curt Storlazzi, Olivia Cheriton, Kurt Rosenberger</att>
+        <att name="serial_number" type="double">55067.0</att>
+        <att name="Site">SBT</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="start_time">11-Jul-2017 14:00:00</att>
+        <att name="stop_time">30-Nov-2017 14:00:00</att>
+        <att name="summary">Time-series data of water surface elevation, waves, currents, temperature, and salinity collected between 17 May 2017 and 17 Jan 2018 off the southwest coast of Puerto Rico in support of a study on circulation and sediment transport dynamics over coral reefs. The data are available in NetCDF format, grouped together in zip files by instrument site location. A README.txt file details the files contained within each zip, including the file names, type of data collected, instrument that collected the data, depth, and start and end dates/times.</att>
+        <att name="time_coverage_duration">P142DT0H0M0S</att>
+        <att name="time_coverage_end">2017-11-30T14:00:00</att>
+        <att name="time_coverage_resolution">P0DT1H0M0S</att>
+        <att name="time_coverage_start">2017-07-11T14:00:00</att>
+        <att name="title">Time series data of oceanographic conditions from La Parguera, Puerto Rico, 2017-2018 Coral Reef Circulation and Sediment Dynamics Experiment - PRI17SBT03rbr-wvs</att>
+        <att name="txt_filename">055067_20180116_0720_burst.txt</att>
+        <att name="WATER_DEPTH" type="double">19.3</att>
+        <att name="WATER_DEPTH_datum">MSL</att>
+        <att name="WATER_DEPTH_SOURCE">pressure data</att>
+        <att name="WATER_DEPTH_source">water depth = MSL from pressure sensor + initial_instrument_height</att>
+        <att name="WATER_MASS">?</att>
+        <att name="wvs_filename">055067_20180116_0720_wave.txt</att>
+        <att name="Year" type="double">2017.0</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="CREATION_DATE">null</att>
+        <att name="creation_date">15-Feb-2018 13:58:04</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2018-02-15T13:58:04Z</att>
+        <att name="DESCRIPT">null</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_P9IXOHID.ipynb;</att>
+        <att name="infoUrl">https://doi.org/10.5066/P9IXOHID</att>
+        <att name="keywords">1/10, 1/3, 2017-2018, burst, circulation, coastal, common, conditions, coral, data, density, depth, dynamics, earth, Earth Science &gt; Oceans &gt; Ocean Waves &gt; Significant Wave Height, Earth Science &gt; Oceans &gt; Ocean Waves &gt; Swells, Earth Science &gt; Oceans &gt; Ocean Waves &gt; Wave Period, Earth Science &gt; Oceans &gt; Ocean Waves &gt; Wave Spectra, Earth Science &gt; Oceans &gt; Sea Surface Topography &gt; Sea Surface Height, experiment, feature, feature_type_instance, format, geological, geology, H10, Havg, height, hght_18, highest, identifier, instance, latitude, level, longitude, marine, maximum, mean, measurement, mwh_4064, network, number, ocean, oceanographic, oceanography, oceans, parguera, peak, period, pri17sbt03rbr, pri17sbt03rbr-wvs, program, puerto, reef, rico, science, sea, sea level, sea_surface_height, sea_surface_swell_wave_period, sea_surface_wave_maximum_height, sea_surface_wave_mean_height_of_highest_tenth, sea_surface_wave_mean_period, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_significant_height, sediment, sediment transport, sensor, series, significant, spectra, spectral, states, statistics, surface, surface waves, survey, swell, swells, t10, tenth, time, time series, topography, type, united, usgs, variance, wave, waves, wh_4061, wp_4060, wp_peak, wvs</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="PROGRAM">null</att>
+        <att name="program">Coral Reefs</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="start_time">null</att>
+        <att name="stop_time">null</att>
+        <att name="subsetVariables">latitude, longitude, depth, feature_type_instance</att>
+        <att name="summary">Time series data of oceanographic conditions from La Parguera, Puerto Rico, 2017-2018 Coral Reef Circulation and Sediment Dynamics Experiment - PRI17SBT03rbr-wvs. Time-series data of water surface elevation, waves, currents, temperature, and salinity collected between 17 May 2017 and 17 Jan 2018 off the southwest coast of Puerto Rico in support of a study on circulation and sediment transport dynamics over coral reefs. The data are available in Network Common Data Format (NetCDF) format, grouped together in zip files by instrument site location. A README.txt file details the files contained within each zip, including the file names, type of data collected, instrument that collected the data, depth, and start and end dates/times.</att>
+        <att name="time_coverage_end">2017-11-30T14:00:00Z</att>
+        <att name="time_coverage_start">2017-07-11T14:00:00Z</att>
+        <att name="title">Time series data of oceanographic conditions from La Parguera, Puerto Rico, 2017-2018 Coral Reef Circulation and Sediment Dynamics Experiment, PRI17SBT03rbr-wvs</att>
+        <att name="WATER_MASS">null</att>
+        <att name="Year">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">T</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">hours since 2017-07-11 14:00:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="units">hours since 2017-07-11T14:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="epic_code" type="double">500.0</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="epic_code" type="double">502.0</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="epic_code" type="double">3.0</att>
+            <att name="initial_sensor_height" type="double">0.3</att>
+            <att name="long_name">mean water depth</att>
+            <att name="positive">down</att>
+            <att name="standard_name">height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="source_name">z</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>burst</sourceName>
+        <destinationName>burst</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="generic_name">burst</att>
+            <att name="long_name">Burst Number          </att>
+            <att name="maximum" type="double">4623.0</att>
+            <att name="minimum" type="double">1215.0</att>
+            <att name="units">1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">4623.0</att>
+            <att name="data_min" type="double">1215.0</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="long_name">Burst Number</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wh_4061</sourceName>
+        <destinationName>wh_4061</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="double">4061.0</att>
+            <att name="generic_name">wave_height</att>
+            <att name="long_name">Significant Wave Height (m)</att>
+            <att name="maximum" type="double">2.8052</att>
+            <att name="minimum" type="double">0.1186</att>
+            <att name="name">wh</att>
+            <att name="standard_name">sea_surface_wave_significant_height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">2.8052</att>
+            <att name="data_min" type="double">0.1186</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Ts</sourceName>
+        <destinationName>Ts</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="generic_name">wave_period</att>
+            <att name="initial_sensor_height" type="double">0.3</att>
+            <att name="long_name">Significant Wave Period (Ts) (s)</att>
+            <att name="maximum" type="double">13.4537</att>
+            <att name="minimum" type="double">6.7449</att>
+            <att name="name">Ts</att>
+            <att name="units">s</att>
+            <att name="valid_range" type="doubleList">0.0 3600.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">13.4537</att>
+            <att name="data_min" type="double">6.7449</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+            <att name="standard_name">sea_surface_swell_wave_period</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Havg</sourceName>
+        <destinationName>Havg</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="generic_name">wave_height</att>
+            <att name="initial_sensor_height" type="double">0.3</att>
+            <att name="long_name">Mean 1/3 Wave Height (m)</att>
+            <att name="maximum" type="double">1.837</att>
+            <att name="minimum" type="double">0.0729</att>
+            <att name="name">H3</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">1.837</att>
+            <att name="data_min" type="double">0.0729</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+            <att name="standard_name">sea_surface_wave_significant_height</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wp_4060</sourceName>
+        <destinationName>wp_4060</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="generic_name">wave_period</att>
+            <att name="initial_sensor_height" type="double">0.3</att>
+            <att name="long_name">Mean Wave Period (s)</att>
+            <att name="maximum" type="double">12.6906</att>
+            <att name="minimum" type="double">6.6957</att>
+            <att name="name">wp</att>
+            <att name="standard_name">sea_surface_wave_mean_period</att>
+            <att name="type">EVEN</att>
+            <att name="units">s</att>
+            <att name="valid_range" type="doubleList">0.0 86400.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">12.6906</att>
+            <att name="data_min" type="double">6.6957</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>mwh_4064</sourceName>
+        <destinationName>mwh_4064</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="generic_name">wave_height</att>
+            <att name="initial_sensor_height" type="double">0.3</att>
+            <att name="long_name">Maximum Wave Height (m)</att>
+            <att name="maximum" type="double">6.2999</att>
+            <att name="minimum" type="double">0.1888</att>
+            <att name="name">mwh</att>
+            <att name="standard_name">sea_surface_wave_maximum_height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">6.2999</att>
+            <att name="data_min" type="double">0.1888</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wp_peak</sourceName>
+        <destinationName>wp_peak</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="double">4064.0</att>
+            <att name="generic_name">wave_period</att>
+            <att name="long_name">Peak Wave Period (s)</att>
+            <att name="maximum" type="double">14.25</att>
+            <att name="minimum" type="double">3.25</att>
+            <att name="name">wp_peak</att>
+            <att name="standard_name">sea_surface_wave_period_at_variance_spectral_density_maximum</att>
+            <att name="type">EVEN</att>
+            <att name="units">s</att>
+            <att name="valid_range" type="doubleList">0.0 86400.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">50.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">14.25</att>
+            <att name="data_min" type="double">3.25</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>H10</sourceName>
+        <destinationName>H10</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="generic_name">wave_height</att>
+            <att name="initial_sensor_height" type="double">0.3</att>
+            <att name="long_name">Mean 1/10 Wave Height (m)</att>
+            <att name="maximum" type="double">3.7076</att>
+            <att name="minimum" type="double">0.1467</att>
+            <att name="name">H10</att>
+            <att name="standard_name">sea_surface_wave_mean_height_of_highest_tenth</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">3.7076</att>
+            <att name="data_min" type="double">0.1467</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>T10</sourceName>
+        <destinationName>T10</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="generic_name">wave_period</att>
+            <att name="initial_sensor_height" type="double">0.3</att>
+            <att name="long_name">Mean 1/10 Period (T10) (s)</att>
+            <att name="maximum" type="double">13.5</att>
+            <att name="minimum" type="double">6.5714</att>
+            <att name="name">T10</att>
+            <att name="units">s</att>
+            <att name="valid_range" type="doubleList">0.0 3600.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">4000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">13.5</att>
+            <att name="data_min" type="double">6.5714</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>hght_18</sourceName>
+        <destinationName>hght_18</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="double">18.0</att>
+            <att name="generic_name">height</att>
+            <att name="initial_sensor_height" type="double">0.3</att>
+            <att name="long_name">Height of the Sea Surface (m)</att>
+            <att name="maximum" type="double">19.7632</att>
+            <att name="minimum" type="double">19.3394</att>
+            <att name="name">hght</att>
+            <att name="NOTE">Water Level from pressure data corrected for instrument height and average atmospheric pressure</att>
+            <att name="standard_name">sea_surface_height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">-2.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">19.7632</att>
+            <att name="data_min" type="double">19.3394</att>
+            <att name="ioos_category">Sea Level</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

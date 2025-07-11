@@ -1,0 +1,548 @@
+<dataset type="EDDTableFromNcCFFiles" datasetID="11109vecs-a" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/silt/usgs/Projects/stellwagen/CF-1.6/MATANZAS_18</fileDir>
+    <fileNameRegex>11109vecs-a.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <preExtractRegex></preExtractRegex>
+    <postExtractRegex></postExtractRegex>
+    <extractRegex></extractRegex>
+    <columnNameForExtract></columnNameForExtract>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <addAttributes>
+        <att name="Conventions">CF-1.6,ACDD-1.3, COARDS</att>
+        <att name="cdm_data_type">timeSeries</att>
+        <att name="cdm_timeseries_variables">latitude, longitude, altitude, feature_type_instance</att>
+        <att name="subsetVariables">latitude, longitude, altitude, feature_type_instance</att>
+        <att name="infoUrl">https://stellwagen.er.usgs.gov/</att>
+        <att name="keywords">feature_type_instance,latitude,longitude,crs,platform,time,z,AGC1_1221,AGC2_1222,AGC3_1223,Battery,CD_310,COR1_1285,COR2_1286,COR3_1287,CS_300,HSTD_1218,Hdg_1215,PSTD_1219,P_4023,Ptch_1216,RSTD_1220,Roll_1217,SDP_850,Tx_1211,USTD_4097,VSTD_4098,WSTD_4099,burst,u_1205,u_1205max,u_1205min,v_1206,v_1206max,v_1206min,w_1204,w_1204max,w_1204min</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
+    </addAttributes>
+    
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <addAttributes>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            
+            <att name="ioos_category">Location</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            
+            <att name="ioos_category">Location</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>crs</sourceName>
+        <destinationName>crs</destinationName>
+        <dataType>int</dataType>
+        <addAttributes>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>platform</sourceName>
+        <destinationName>platform</destinationName>
+        <dataType>int</dataType>
+        <addAttributes>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            
+            <att name="ioos_category">Time</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>altitude</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            
+            <att name="ioos_category">Location</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>AGC1_1221</sourceName>
+        <destinationName>AGC1_1221</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">152.67392</att>
+            <att name="colorBarMinimum" type="double">87.38367</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>AGC2_1222</sourceName>
+        <destinationName>AGC2_1222</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">153.83347</att>
+            <att name="colorBarMinimum" type="double">88.58093</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>AGC3_1223</sourceName>
+        <destinationName>AGC3_1223</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">148.59064</att>
+            <att name="colorBarMinimum" type="double">85.49625</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>Battery</sourceName>
+        <destinationName>Battery</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">10.876271</att>
+            <att name="colorBarMinimum" type="double">10.799635</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>CD_310</sourceName>
+        <destinationName>CD_310</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">359.85938</att>
+            <att name="colorBarMinimum" type="double">0.40168658</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>COR1_1285</sourceName>
+        <destinationName>COR1_1285</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">98.99283</att>
+            <att name="colorBarMinimum" type="double">42.448914</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>COR2_1286</sourceName>
+        <destinationName>COR2_1286</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">98.97897</att>
+            <att name="colorBarMinimum" type="double">39.13507</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>COR3_1287</sourceName>
+        <destinationName>COR3_1287</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">98.98578</att>
+            <att name="colorBarMinimum" type="double">28.78952</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>CS_300</sourceName>
+        <destinationName>CS_300</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.5008908</att>
+            <att name="colorBarMinimum" type="double">0.00031868924</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>HSTD_1218</sourceName>
+        <destinationName>HSTD_1218</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.9827469</att>
+            <att name="colorBarMinimum" type="double">0.07178031</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>Hdg_1215</sourceName>
+        <destinationName>Hdg_1215</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">118.05322</att>
+            <att name="colorBarMinimum" type="double">84.044334</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>PSTD_1219</sourceName>
+        <destinationName>PSTD_1219</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">1.1615893</att>
+            <att name="colorBarMinimum" type="double">0.007886925</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>P_4023</sourceName>
+        <destinationName>P_4023</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.08572562</att>
+            <att name="colorBarMinimum" type="double">0.059839252</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>Ptch_1216</sourceName>
+        <destinationName>Ptch_1216</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">1.1871896</att>
+            <att name="colorBarMinimum" type="double">-1.5665338</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>RSTD_1220</sourceName>
+        <destinationName>RSTD_1220</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.65687346</att>
+            <att name="colorBarMinimum" type="double">0.007383723</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>Roll_1217</sourceName>
+        <destinationName>Roll_1217</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">2.4205096</att>
+            <att name="colorBarMinimum" type="double">-0.82368517</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>SDP_850</sourceName>
+        <destinationName>SDP_850</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.0037448031</att>
+            <att name="colorBarMinimum" type="double">0.00036700434</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>Tx_1211</sourceName>
+        <destinationName>Tx_1211</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">19.766602</att>
+            <att name="colorBarMinimum" type="double">11.577179</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>USTD_4097</sourceName>
+        <destinationName>USTD_4097</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.38788936</att>
+            <att name="colorBarMinimum" type="double">0.032155134</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>VSTD_4098</sourceName>
+        <destinationName>VSTD_4098</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.2684811</att>
+            <att name="colorBarMinimum" type="double">0.021205716</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>WSTD_4099</sourceName>
+        <destinationName>WSTD_4099</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.04927107</att>
+            <att name="colorBarMinimum" type="double">0.00417128</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>burst</sourceName>
+        <destinationName>burst</destinationName>
+        <dataType>int</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">1895</att>
+            <att name="colorBarMinimum" type="double">1</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>u_1205</sourceName>
+        <destinationName>u_1205</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.30144614</att>
+            <att name="colorBarMinimum" type="double">-0.11767173</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>u_1205max</sourceName>
+        <destinationName>u_1205max</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">1.6529105</att>
+            <att name="colorBarMinimum" type="double">0.06049127</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>u_1205min</sourceName>
+        <destinationName>u_1205min</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">-0.050955188</att>
+            <att name="colorBarMinimum" type="double">-1.8050325</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>v_1206</sourceName>
+        <destinationName>v_1206</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.19005516</att>
+            <att name="colorBarMinimum" type="double">-0.44728848</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>v_1206max</sourceName>
+        <destinationName>v_1206max</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.9542261</att>
+            <att name="colorBarMinimum" type="double">0.010744035</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>v_1206min</sourceName>
+        <destinationName>v_1206min</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.034716927</att>
+            <att name="colorBarMinimum" type="double">-1.5532528</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>w_1204</sourceName>
+        <destinationName>w_1204</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.025790296</att>
+            <att name="colorBarMinimum" type="double">-0.041206986</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>w_1204max</sourceName>
+        <destinationName>w_1204max</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.3278104</att>
+            <att name="colorBarMinimum" type="double">0.012490477</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>w_1204min</sourceName>
+        <destinationName>w_1204min</destinationName>
+        <dataType>float</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">-0.02753349</att>
+            <att name="colorBarMinimum" type="double">-0.38767105</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+</dataset>

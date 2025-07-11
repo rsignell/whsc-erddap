@@ -1,0 +1,646 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="AMS15M1T01adc-wvs-p">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-F7RN362H/</fileDir>
+    <fileNameRegex>AMS15M1T01adc-wvs-p.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="ADCP_serial_number" type="float">2074.0</att>
+        <att name="ADCPBinSize" type="float">1.0</att>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="COMPOSITE" type="float">0.0</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHIC + sample</att>
+        <att name="CREATION_DATE">14-Dec-2015 11:27:57</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="DATA_CMNT">Time fixed by fix_timeNative by adding 11.000000 hours;  </att>
+        <att name="DATA_ORIGIN">USGS WCMG Sed Trans Group</att>
+        <att name="DATA_SUBTYPE">MOORED</att>
+        <att name="DATA_TYPE">WAVESPEC</att>
+        <att name="datasetID">AMS15M1T01adc-wvs-p</att>
+        <att name="date_created">2015-12-14T11:27:57</att>
+        <att name="DELTA_T">7.200000e+03</att>
+        <att name="Deployment_date">13-Feb-2015 23:11</att>
+        <att name="DEPTH_CONST" type="float">0.0</att>
+        <att name="DESCRIPT">miniprobe</att>
+        <att name="DRIFTER" type="float">0.0</att>
+        <att name="EXPERIMENT">AMS15 </att>
+        <att name="experiment_id">AMS15</att>
+        <att name="featureType">timeSeries</att>
+        <att name="FILL_FLAG" type="double">1.0</att>
+        <att name="geospatial_lat_max" type="float">-14.27152</att>
+        <att name="geospatial_lat_min" type="float">-14.27152</att>
+        <att name="geospatial_lon_max" type="float">-170.72353</att>
+        <att name="geospatial_lon_min" type="float">-170.72353</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F7RN362H.ipynb; Time fixed by fix_timeNative SVN $Revision: 5348 $ by adding 11.000000 hours; Trimmed using trunc_cdf,  SVN $Revision: 3342 $ to select records in the range 16 to 1539.  :Statistical wave parameters converted to NetCDF by adcpWvs2nc:ncwrite_adcpWvs.m V 1.3 on 10-Dec-2015 11:15:40; ADCP wave data processed with RDI WavesMon software</att>
+        <att name="id">AMS15M1T01adc-wvs-p</att>
+        <att name="initial_instrument_height" type="float">0.5</att>
+        <att name="initial_instrument_height_note">height in meters above bottom: accurate for tripod mounted instruments</att>
+        <att name="INST_TYPE">RD Instruments ADCP</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="latitude" type="float">-14.27152</att>
+        <att name="latitude_units">degree_north</att>
+        <att name="longitude" type="float">-170.72353</att>
+        <att name="longitude_units">degree_east</att>
+        <att name="magnetic_variation_applied" type="float">11.65</att>
+        <att name="magnetic_variation_at_site" type="float">11.65</att>
+        <att name="metadata_link">https://doi.org/10.5066/F7RN362H</att>
+        <att name="metafile_author">Rosenberger</att>
+        <att name="metafile_name">ZrunM1Twvs</att>
+        <att name="metafile_version" type="float">1.0</att>
+        <att name="modification_date">10-Dec-2015 11:15:38</att>
+        <att name="MOORING">AMS15M1T</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="nominal_sensor_depth" type="float">17.7</att>
+        <att name="nominal_sensor_depth_note">inst_depth = (water_depth - inst_height); nominal depth below surface, meters</att>
+        <att name="outFileRoot">AMS15M1T</att>
+        <att name="platform_type">Tripod</att>
+        <att name="POS_CONST" type="float">0.0</att>
+        <att name="PROJECT">American Samoa</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="Recovery_date">14-Jul-2015 23:09</att>
+        <att name="SciPi">Curt Storlazzi</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="start_time">13-Feb-2015 12:00:00</att>
+        <att name="stop_time">20-Jun-2015 10:00:00</att>
+        <att name="summary">In 2015, U.S. Geological Survey (USGS) and U.S. National Park Service (NPS) researchers began a collaborative study to determine coastal circulation patterns and water-column properties along north-central Tutuila, in an area focused on NPSA&#x2019;s Tutuila Unit and its coral reef ecosystem. The continuous measurements of waves, currents, tides, and water-column properties (temperature and salinity) from these instrument deployments, coupled with available meteorological measurements of wind and rainfall, provide information on nearshore circulation and the variability in these hydrodynamic properties for NPSA&#x2019;s Tutuila Unit. These data will complement ongoing and future water quality efforts along north-central Tutuila and in NPSA that will provide baseline information to determine impacts resulting from management and (or) climate change.
+
+The field experiment included collection of continuous oceanographic data, as well as spatially extensive shipboard surveys and drifter deployments in NPSA from February through July 2015. The goals of the experiment were to understand controls on flow patterns and water-column properties in the NPSA. To do this, the USGS and NPS set out to complete the following tasks: 
+
+Measure temporal variability in wave heights, wave periods, wave directions, current speeds, current directions, temperature, and salinity.
+Measure spatial variability in current speeds, current directions, temperature, salinity, chlorophyll, turbidity, and light transmission.
+Track pathways of Lagrangian ocean surface current drifters to understand transport pathways of buoyant surface material (coral larvae, debris, search-and rescue, etc).
+Compile modeled deep-water wave height, wave period, and wave direction data and locally-measured wind speed, wind direction, rainfall and barometric pressure.
+Determine the influence of oceanographic and meteorologic forcing on circulation patterns and water-column properties along north-central Tutuila and in NPSA waters.
+This data release includes data from acoustic doppler current profilers, conductivity-temperature-depth profilers, satellite-tracked Lagrangian surface-current drifters, and other time-series oceanographic data. A full description of the data and findings of the study are included in a USGS Open File Report:
+Storlazzi, C.D., Cheriton, O.M., Rosenberger, K.J., Logan, J.B., and Clark, T.B., 2017, Coastal circulation and water-column properties in the National Park of American Samoa, February&#x2013;July 2015: U.S. Geological Survey Open-File Report 2017&#x2013;1060, 104 p., https://doi.org/10.3133/ofr20171060. </att>
+        <att name="time_coverage_duration">P126DT22H0M0S</att>
+        <att name="time_coverage_end">2015-06-20T21:00:00</att>
+        <att name="time_coverage_resolution">P0DT2H0M0S</att>
+        <att name="time_coverage_start">2015-02-13T23:00:00</att>
+        <att name="title">Data from coastal circulation and water-column properties in the National Park of American Samoa, February-July 2015 - AMS15M1T01adc-wvs-p</att>
+        <att name="VAR_DESC">:wh:wp:mwh:hght:wp_peak:wvdir</att>
+        <att name="VAR_FILL" type="float">1.0E35</att>
+        <att name="WATER_DEPTH" type="float">18.2</att>
+        <att name="WATER_DEPTH_datum">Mooring Log</att>
+        <att name="WATER_DEPTH_source">unknown</att>
+        <att name="WATER_MASS">?</att>
+        <att name="wavesmon_version" type="float">3.08</att>
+        <att name="WavesMonCfg_ACFSTD" type="float">4.0</att>
+        <att name="WavesMonCfg_AltOffset" type="float">0.0</att>
+        <att name="WavesMonCfg_ApplicationMode" type="float">0.0</att>
+        <att name="WavesMonCfg_ApplyFixedHeading" type="float">0.0</att>
+        <att name="WavesMonCfg_ApplyMagVar" type="float">1.0</att>
+        <att name="WavesMonCfg_AutoBinSel" type="float">1.0</att>
+        <att name="WavesMonCfg_BeamConf" type="float">20.0</att>
+        <att name="WavesMonCfg_BeamsToUse" type="float">123.0</att>
+        <att name="WavesMonCfg_BinSubSampleParam" type="float">1.0</att>
+        <att name="WavesMonCfg_BottomSlopeX" type="float">0.0</att>
+        <att name="WavesMonCfg_BottomSlopeY" type="float">0.0</att>
+        <att name="WavesMonCfg_CalPressFromSurf" type="float">0.0</att>
+        <att name="WavesMonCfg_ClipPwrSpec" type="float">0.0</att>
+        <att name="WavesMonCfg_Command_0">CR1</att>
+        <att name="WavesMonCfg_Command_1">CF11110</att>
+        <att name="WavesMonCfg_Command_10">HB5</att>
+        <att name="WavesMonCfg_Command_11">TE00040000</att>
+        <att name="WavesMonCfg_Command_12">TP000050</att>
+        <att name="WavesMonCfg_Command_13">HT00000050</att>
+        <att name="WavesMonCfg_Command_14">HP1200</att>
+        <att name="WavesMonCfg_Command_15">HR02000000</att>
+        <att name="WavesMonCfg_Command_2">EX11111</att>
+        <att name="WavesMonCfg_Command_3">EB0</att>
+        <att name="WavesMonCfg_Command_4">ED180</att>
+        <att name="WavesMonCfg_Command_5">WP240</att>
+        <att name="WavesMonCfg_Command_6">WE5000</att>
+        <att name="WavesMonCfg_Command_7">WS100</att>
+        <att name="WavesMonCfg_Command_8">WN25</att>
+        <att name="WavesMonCfg_Command_9">HD111000000</att>
+        <att name="WavesMonCfg_Coordinates" type="float">3.0</att>
+        <att name="WavesMonCfg_CoordinatesOut" type="float">3.0</att>
+        <att name="WavesMonCfg_CPUFirmware" type="float">5140.0</att>
+        <att name="WavesMonCfg_Currents" type="float">1.0</att>
+        <att name="WavesMonCfg_DeploymentSeqNum" type="float">0.0</att>
+        <att name="WavesMonCfg_DepthCellSize" type="float">100.0</att>
+        <att name="WavesMonCfg_DepthOffset" type="float">0.0</att>
+        <att name="WavesMonCfg_DirFreqBands" type="float">128.0</att>
+        <att name="WavesMonCfg_DirP2" type="float">1.0</att>
+        <att name="WavesMonCfg_DirSpecBins">1,5,11,12,13</att>
+        <att name="WavesMonCfg_DirSpectra" type="float">1.0</att>
+        <att name="WavesMonCfg_DoUVW" type="float">0.0</att>
+        <att name="WavesMonCfg_DownSetup" type="float">0.0</att>
+        <att name="WavesMonCfg_EndEnsNmb" type="float">4020.0</att>
+        <att name="WavesMonCfg_EndTimeDate">06/20/15 12:00:00.00</att>
+        <att name="WavesMonCfg_EPB" type="float">1200.0</att>
+        <att name="WavesMonCfg_EScale" type="float">1.0</att>
+        <att name="WavesMonCfg_ExpectWavePackets" type="float">1.0</att>
+        <att name="WavesMonCfg_ExtOffset" type="float">0.0</att>
+        <att name="WavesMonCfg_FFTLen" type="float">1024.0</att>
+        <att name="WavesMonCfg_FileSize" type="float">0.0</att>
+        <att name="WavesMonCfg_FirstBinToOutput" type="float">1.0</att>
+        <att name="WavesMonCfg_FixedPitch" type="float">0.0</att>
+        <att name="WavesMonCfg_FixedRoll" type="float">0.0</att>
+        <att name="WavesMonCfg_FixSOS" type="float">0.0</att>
+        <att name="WavesMonCfg_FourierCoefficients" type="float">0.0</att>
+        <att name="WavesMonCfg_FreqThresh" type="float">0.95</att>
+        <att name="WavesMonCfg_HDanger" type="float">6.0</att>
+        <att name="WavesMonCfg_HeadingOffset" type="float">1165.0</att>
+        <att name="WavesMonCfg_HorzSetup" type="float">0.0</att>
+        <att name="WavesMonCfg_HPRSeries" type="float">0.0</att>
+        <att name="WavesMonCfg_HsScale" type="float">0.001</att>
+        <att name="WavesMonCfg_HWarnLevel" type="float">3.0</att>
+        <att name="WavesMonCfg_InstrumentFrequency" type="float">600.0</att>
+        <att name="WavesMonCfg_IntTimeSeries" type="float">0.0</att>
+        <att name="WavesMonCfg_Iter" type="float">3.0</att>
+        <att name="WavesMonCfg_LFreqThresh" type="float">0.03</att>
+        <att name="WavesMonCfg_LogDataFile">WAVES_000_000_TS1502120600_LOG5.TXT</att>
+        <att name="WavesMonCfg_MagneticVariation" type="float">1165.0</att>
+        <att name="WavesMonCfg_MaxSizeParamLogData" type="float">2.0E7</att>
+        <att name="WavesMonCfg_MaxSizeProcWaveData" type="float">2.0E8</att>
+        <att name="WavesMonCfg_MaxSizeRawCurrData" type="float">1.0E8</att>
+        <att name="WavesMonCfg_MaxSizeRawWaveData" type="float">2.0E7</att>
+        <att name="WavesMonCfg_ModelType" type="float">1.0</att>
+        <att name="WavesMonCfg_NBeams" type="float">4.0</att>
+        <att name="WavesMonCfg_NBins" type="float">25.0</att>
+        <att name="WavesMonCfg_NBursts" type="float">0.0</att>
+        <att name="WavesMonCfg_NDir" type="float">90.0</att>
+        <att name="WavesMonCfg_NFreqBins" type="float">128.0</att>
+        <att name="WavesMonCfg_NHrsHist" type="float">24.0</att>
+        <att name="WavesMonCfg_NomDepth" type="float">0.0</att>
+        <att name="WavesMonCfg_NominalHeading" type="float">0.0</att>
+        <att name="WavesMonCfg_NumProcessBins" type="float">5.0</att>
+        <att name="WavesMonCfg_ORGain" type="float">0.9</att>
+        <att name="WavesMonCfg_OutputDataDirectory">D:\Projects\Coralreefs\Samoa\data\AMS15M1T\AMS15M1T01\WAVES</att>
+        <att name="WavesMonCfg_OutputDataPrefix">WAVES</att>
+        <att name="WavesMonCfg_OutputGraphicsDirectory">D:\Projects\Coralreefs\Samoa\data\AMS15M1T\AMS15M1T01\WAVES\Graphics_Out</att>
+        <att name="WavesMonCfg_ParamLogBaudrate" type="float">9600.0</att>
+        <att name="WavesMonCfg_ParamLogDataOutputFlag" type="float">1.0</att>
+        <att name="WavesMonCfg_ParamLogFile">D:\Projects\Coralreefs\Samoa\data\AMS15M1T\AMS15M1T01\WAVES</att>
+        <att name="WavesMonCfg_ParamLogFlowcontrol" type="float">0.0</att>
+        <att name="WavesMonCfg_ParamLogIOType" type="float">0.0</att>
+        <att name="WavesMonCfg_ParamLogOverlapped" type="float">8.0</att>
+        <att name="WavesMonCfg_ParamLogParity" type="float">0.0</att>
+        <att name="WavesMonCfg_ParamLogPortId" type="float">0.0</att>
+        <att name="WavesMonCfg_ParamLogStopbits" type="float">0.0</att>
+        <att name="WavesMonCfg_PDirSpectra" type="float">1.0</att>
+        <att name="WavesMonCfg_PFourierCoefficients" type="float">0.0</att>
+        <att name="WavesMonCfg_PFreqThresh" type="float">0.2</att>
+        <att name="WavesMonCfg_PingsPerEns" type="float">240.0</att>
+        <att name="WavesMonCfg_PIntTimeSeries" type="float">0.0</att>
+        <att name="WavesMonCfg_PPressSpectra" type="float">1.0</att>
+        <att name="WavesMonCfg_PPressTimeSeries" type="float">1.0</att>
+        <att name="WavesMonCfg_Press4Depth" type="float">1.0</att>
+        <att name="WavesMonCfg_PressSpectra" type="float">1.0</att>
+        <att name="WavesMonCfg_PressTimeSeries" type="float">1.0</att>
+        <att name="WavesMonCfg_ProcBins" type="float">5.0</att>
+        <att name="WavesMonCfg_ProcWaveDataIOType" type="float">2.0</att>
+        <att name="WavesMonCfg_ProcWaveFile">D:\Projects\Coralreefs\Samoa\data\AMS15M1T\AMS15M1T01\WAVES</att>
+        <att name="WavesMonCfg_PSpecOffset" type="float">0.0</att>
+        <att name="WavesMonCfg_PSrfDirSpectra" type="float">0.0</att>
+        <att name="WavesMonCfg_PSurfSpectra" type="float">1.0</att>
+        <att name="WavesMonCfg_PSurfTimeSeries" type="float">1.0</att>
+        <att name="WavesMonCfg_PVelSpectra" type="float">1.0</att>
+        <att name="WavesMonCfg_PVelTimeSeries" type="float">1.0</att>
+        <att name="WavesMonCfg_PWaveParams" type="float">1.0</att>
+        <att name="WavesMonCfg_RawCurrDataIOType" type="float">3.0</att>
+        <att name="WavesMonCfg_RawCurrDataOutputFlag" type="float">1.0</att>
+        <att name="WavesMonCfg_RawFileName">D:\Projects\Coralreefs\Samoa\data\AMS15M1T\AMS15M1T01\AMS1B000.000</att>
+        <att name="WavesMonCfg_RawFileSize" type="float">0.0</att>
+        <att name="WavesMonCfg_RawWaveDataBaudrate" type="float">9600.0</att>
+        <att name="WavesMonCfg_RawWaveDataDatabits" type="float">8.0</att>
+        <att name="WavesMonCfg_RawWaveDataFile">D:\Projects\Coralreefs\Samoa\data\AMS15M1T\AMS15M1T01\WAVES</att>
+        <att name="WavesMonCfg_RawWaveDataFlowcontrol" type="float">0.0</att>
+        <att name="WavesMonCfg_RawWaveDataIOType" type="float">3.0</att>
+        <att name="WavesMonCfg_RawWaveDataOutputFlag" type="float">0.0</att>
+        <att name="WavesMonCfg_RawWaveDataOverlapped" type="float">0.0</att>
+        <att name="WavesMonCfg_RawWaveDataParity" type="float">0.0</att>
+        <att name="WavesMonCfg_RawWaveDataPortId" type="float">0.0</att>
+        <att name="WavesMonCfg_RawWaveDataStopbits" type="float">0.0</att>
+        <att name="WavesMonCfg_RealTimeMode" type="float">1.0</att>
+        <att name="WavesMonCfg_RemoveBias" type="float">1.0</att>
+        <att name="WavesMonCfg_SampleRate" type="float">2.0</att>
+        <att name="WavesMonCfg_SaveAliasData" type="float">0.0</att>
+        <att name="WavesMonCfg_SaveImages" type="float">0.0</att>
+        <att name="WavesMonCfg_ScaleSpec" type="float">0.0</att>
+        <att name="WavesMonCfg_SeaSwellTransitionFrequency" type="float">0.125</att>
+        <att name="WavesMonCfg_SensorSource" type="float">125.0</att>
+        <att name="WavesMonCfg_SFreqThresh" type="float">0.65</att>
+        <att name="WavesMonCfg_Skip" type="float">0.0</att>
+        <att name="WavesMonCfg_SmallWaveFreq" type="float">100.0</att>
+        <att name="WavesMonCfg_SmallWaveThresh" type="float">0.0</att>
+        <att name="WavesMonCfg_SrfDirSpectra" type="float">0.0</att>
+        <att name="WavesMonCfg_SSpecOffset" type="float">0.0</att>
+        <att name="WavesMonCfg_StartEnsNmb" type="float">1.0</att>
+        <att name="WavesMonCfg_StartTimeDate">02/12/15 06:00:00.00</att>
+        <att name="WavesMonCfg_Surf4Depth" type="float">0.0</att>
+        <att name="WavesMonCfg_SurfMax" type="float">100000.0</att>
+        <att name="WavesMonCfg_SurfMaxChng" type="float">2000.0</att>
+        <att name="WavesMonCfg_SurfMin" type="float">-5000.0</att>
+        <att name="WavesMonCfg_SurfPctGd" type="float">90.0</att>
+        <att name="WavesMonCfg_SurfSpectra" type="float">1.0</att>
+        <att name="WavesMonCfg_SurfSTD" type="float">4.0</att>
+        <att name="WavesMonCfg_SurfTimeSeries" type="float">1.0</att>
+        <att name="WavesMonCfg_TBB" type="float">7200.0</att>
+        <att name="WavesMonCfg_TBE" type="float">50.0</att>
+        <att name="WavesMonCfg_TBEMaxDev" type="float">500.0</att>
+        <att name="WavesMonCfg_Tilts" type="float">1.0</att>
+        <att name="WavesMonCfg_TimeBetweenPings" type="float">120000.0</att>
+        <att name="WavesMonCfg_TimePerEns" type="float">120000.0</att>
+        <att name="WavesMonCfg_TotalBinToOutput" type="float">5.0</att>
+        <att name="WavesMonCfg_TotalEnsNmb" type="float">1539.0</att>
+        <att name="WavesMonCfg_TpDanger" type="float">15.0</att>
+        <att name="WavesMonCfg_TpWarnLevel" type="float">10.0</att>
+        <att name="WavesMonCfg_TransV2Surf" type="float">1.0</att>
+        <att name="WavesMonCfg_VelBins" type="float">5.0</att>
+        <att name="WavesMonCfg_VelMax" type="float">5000.0</att>
+        <att name="WavesMonCfg_VelMaxChng" type="float">200.0</att>
+        <att name="WavesMonCfg_VelMin" type="float">-5000.0</att>
+        <att name="WavesMonCfg_VelPctGd" type="float">90.0</att>
+        <att name="WavesMonCfg_VelSpectra" type="float">1.0</att>
+        <att name="WavesMonCfg_VelSTD" type="float">4.0</att>
+        <att name="WavesMonCfg_VelTimeSeries" type="float">1.0</att>
+        <att name="WavesMonCfg_VSpecBins">1,5,11,12,13</att>
+        <att name="WavesMonCfg_VSpecOffset" type="float">0.0</att>
+        <att name="WavesMonCfg_WaveDataOutputFlag" type="float">1.0</att>
+        <att name="WavesMonCfg_WaveLogFormat" type="float">5.0</att>
+        <att name="WavesMonCfg_WaveParams" type="float">1.0</att>
+        <att name="WavesMonCfg_WaveParamSource" type="float">86.0</att>
+        <att name="WavesMonCfg_WC" type="float">1.0</att>
+        <att name="WavesMonCfg_WindowType" type="float">1.0</att>
+        <att name="WavesMonCfg_XdcrAlt" type="float">50.0</att>
+        <att name="WavesMonCfg_XducerDepth" type="float">1800.0</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="CREATION_DATE">null</att>
+        <att name="creation_date">14-Dec-2015 11:27:57</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="DATA_CMNT">Time fixed by fix_timeNative by adding 11.000000 hours;</att>
+        <att name="date_created">2015-12-14T11:27:57Z</att>
+        <att name="EXPERIMENT">AMS15</att>
+        <att name="infoUrl">https://doi.org/10.5066/F7RN362H</att>
+        <att name="keywords">acoustic, adcp, american, ams15m1t01adc, ams15m1t01adc-wvs-p, burst, circulation, coastal, column, conductivity, ctd, current, currents, data, degrees, density, depth, direction, doppler, earth, Earth Science &gt; Oceans &gt; Ocean Waves &gt; Significant Wave Height, Earth Science &gt; Oceans &gt; Ocean Waves &gt; Wave Period, Earth Science &gt; Oceans &gt; Ocean Waves &gt; Wave Spectra, Earth Science &gt; Oceans &gt; Ocean Waves &gt; Wave Speed/Direction, Earth Science &gt; Oceans &gt; Sea Surface Topography &gt; Sea Surface Height, feature, feature_type_instance, february-july, geological, geology, height, hght_18, identifier, instance, latitude, level, longitude, marine, maximum, mean, measurement, mwh_4064, national, naval, north, nps, number, ocean, oceanography, oceans, park, peak, period, postgraduate, profiler, program, properties, samoa, school, science, sea, sea level, sea_surface_height, sea_surface_wave_from_direction, sea_surface_wave_maximum_height, sea_surface_wave_mean_period, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_significant_height, seawater, sediment transport, sensor, significant, sonde, spectra, spectral, speed, states, statistics, surface, surface waves, survey, temperature, time, topography, type, united, usgs, variance, velocity, water, water-column, wave, waves, wh_4061, wp_4060, wp_peak, wvdir, wvs</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="latitude_units">null</att>
+        <att name="license">[standard]</att>
+        <att name="longitude_units">null</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="start_time">null</att>
+        <att name="stop_time">null</att>
+        <att name="subsetVariables">latitude, longitude, feature_type_instance</att>
+        <att name="summary">Data from coastal circulation and water-column properties in the National Park of American Samoa, February-July 2015 - AMS15M1T01adc-wvs-p. In 2015, U.S. Geological Survey (United States Geological Survey (USGS)) and U.S. National Park Service (Naval Postgraduate School (NPS)) researchers began a collaborative study to determine coastal circulation patterns and water-column properties along north-central Tutuila, in an area focused on NPSA&#39;s Tutuila Unit and its coral reef ecosystem. The continuous measurements of waves, currents, tides, and water-column properties (temperature and salinity) from these instrument deployments, coupled with available meteorological measurements of wind and rainfall, provide information on nearshore circulation and the variability in these hydrodynamic properties for NPSA&#39;s Tutuila Unit. These data will complement ongoing and future water quality efforts along north-central Tutuila and in NPSA that will provide baseline information to determine impacts resulting from management and (or) climate change.
+
+The field experiment included collection of continuous oceanographic data, as well as spatially extensive shipboard surveys and drifter deployments in NPSA from February through July 2015. The goals of the experiment were to understand controls on flow patterns and water-column properties in the NPSA. To do this, the USGS and NPS set out to complete the following tasks: 
+
+Measure temporal variability in wave heights, wave periods, wave directions, current speeds, current directions, temperature, and salinity.
+Measure spatial variability in current speeds, current directions, temperature, salinity, chlorophyll, turbidity, and light transmission.
+Track pathways of Lagrangian ocean surface current drifters to understand transport pathways of buoyant surface material (coral larvae, debris, search-and rescue, etc).
+Compile modeled deep-water wave height, wave period, and wave direction data and locally-measured wind speed, wind direction, rainfall and barometric pressure.
+Determine the influence of oceanographic and meteorologic forcing on circulation patterns and water-column properties along north-central Tutuila and in NPSA waters.
+This data release includes data from acoustic doppler current profilers, conductivity-temperature-depth profilers, satellite-tracked Lagrangian surface-current drifters, and other time-series oceanographic data. A full description of the data and findings of the study are included in a USGS Open File Report:
+Storlazzi, C.D., Cheriton, O.M., Rosenberger, K.J., Logan, J.B., and Clark, T.B., 2017, Coastal circulation and water-column properties in the National Park of American Samoa, February-July 2015: U.S. Geological Survey Open-File Report 2017-1060, 104 p., https://doi.org/10.3133/ofr20171060.</att>
+        <att name="time_coverage_end">2015-06-20T21:00:00Z</att>
+        <att name="time_coverage_start">2015-02-13T23:00:00Z</att>
+        <att name="title">Data from coastal circulation and water-column properties in the National Park of American Samoa, February-July 2015, AMS15M1T01adc-wvs-p</att>
+        <att name="WATER_DEPTH_source">null</att>
+        <att name="WATER_MASS">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1024</att>
+            <att name="axis">T</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">hours since 2015-02-13 23:00:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="units">hours since 2015-02-13T23:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>burst</sourceName>
+        <destinationName>burst</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">762</att>
+            <att name="_FillValue" type="int">-2147483648</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">record</att>
+            <att name="long_name">Burst Number</att>
+            <att name="units">count</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Statistics</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="datum">NAD83</att>
+            <att name="epic_code" type="int">500</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">lat</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="name">LAT</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="datum">NAD83</att>
+            <att name="epic_code" type="int">502</att>
+            <att name="FORTRAN_format">f10.4</att>
+            <att name="generic_name">lon</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="name">LON</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wh_4061</sourceName>
+        <destinationName>wh_4061</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">508</att>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">4061</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">wave_height</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.5</att>
+            <att name="long_name">Significant Wave Height (m)</att>
+            <att name="maximum" type="float">2.32</att>
+            <att name="minimum" type="float">0.37</att>
+            <att name="name">wh</att>
+            <att name="sensor_depth" type="float">17.7</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="double">2074.0</att>
+            <att name="standard_name">sea_surface_wave_significant_height</att>
+            <att name="units">m</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">10.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">2.32</att>
+            <att name="data_min" type="float">0.37</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wp_4060</sourceName>
+        <destinationName>wp_4060</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">508</att>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">4060</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">wave_period</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.5</att>
+            <att name="long_name">Mean Wave Period (s)</att>
+            <att name="maximum" type="float">13.6</att>
+            <att name="minimum" type="float">5.8</att>
+            <att name="name">wp</att>
+            <att name="sensor_depth" type="float">17.7</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="double">2074.0</att>
+            <att name="standard_name">sea_surface_wave_mean_period</att>
+            <att name="units">s</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">20.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">13.6</att>
+            <att name="data_min" type="float">5.8</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>mwh_4064</sourceName>
+        <destinationName>mwh_4064</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">508</att>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">4064</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">wave_height</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.5</att>
+            <att name="long_name">Maximum Wave Height (m)</att>
+            <att name="maximum" type="float">2.94</att>
+            <att name="minimum" type="float">0.47</att>
+            <att name="name">mwh</att>
+            <att name="sensor_depth" type="float">17.7</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="double">2074.0</att>
+            <att name="standard_name">sea_surface_wave_maximum_height</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">2.94</att>
+            <att name="data_min" type="float">0.47</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>hght_18</sourceName>
+        <destinationName>hght_18</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">508</att>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">18</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">height</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.5</att>
+            <att name="long_name">Height of the Sea Surface (m)</att>
+            <att name="maximum" type="float">19.076</att>
+            <att name="minimum" type="float">17.704</att>
+            <att name="name">hght</att>
+            <att name="NOTE">height of sea surface relative to sensor</att>
+            <att name="sensor_depth" type="float">17.7</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="double">2074.0</att>
+            <att name="standard_name">sea_surface_height</att>
+            <att name="units">m</att>
+            <att name="valid_range" type="doubleList">0.0 1000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">-2.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">19.076</att>
+            <att name="data_min" type="float">17.704</att>
+            <att name="ioos_category">Sea Level</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wp_peak</sourceName>
+        <destinationName>wp_peak</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">508</att>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">4063</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">wave_period</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.5</att>
+            <att name="long_name">Peak Wave Period (s)</att>
+            <att name="maximum" type="float">19.3</att>
+            <att name="minimum" type="float">4.5</att>
+            <att name="name">wp_peak</att>
+            <att name="sensor_depth" type="float">17.7</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="double">2074.0</att>
+            <att name="standard_name">sea_surface_wave_period_at_variance_spectral_density_maximum</att>
+            <att name="units">s</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">50.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">19.3</att>
+            <att name="data_min" type="float">4.5</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wvdir</sourceName>
+        <destinationName>wvdir</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">508</att>
+            <att name="_FillValue" type="double">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">4062</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">wave_dir</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.5</att>
+            <att name="long_name">Peak Wave Direction (degrees North)</att>
+            <att name="maximum" type="float">360.0</att>
+            <att name="minimum" type="float">0.0</att>
+            <att name="name">wvdir</att>
+            <att name="NOTE">Direction FROM which waves are propagating, measured clockwise from north</att>
+            <att name="sensor_depth" type="float">17.7</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="double">2074.0</att>
+            <att name="standard_name">sea_surface_wave_from_direction</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="doubleList">0.0 360.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">360.0</att>
+            <att name="data_min" type="float">0.0</att>
+            <att name="ioos_category">Surface Waves</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

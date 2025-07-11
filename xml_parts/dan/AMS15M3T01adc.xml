@@ -1,0 +1,909 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="AMS15M3T01adc">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-F7RN362H/</fileDir>
+    <fileNameRegex>AMS15M3T01adc.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="beam_angle" type="double">20.0</att>
+        <att name="beam_pattern">convex</att>
+        <att name="beam_width" type="double">2.0</att>
+        <att name="beams_in_velocity_calculation" type="double">4.0</att>
+        <att name="bin_count" type="double">25.0</att>
+        <att name="bin_size" type="double">1.0</att>
+        <att name="blanking_distance" type="double">0.88</att>
+        <att name="cdm_profile_variables">profile_index</att>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="center_first_bin" type="double">2.12</att>
+        <att name="code_repetitions" type="double">5.0</att>
+        <att name="COMPOSITE" type="int">0</att>
+        <att name="conductivity_sensor">NO</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHIC</att>
+        <att name="CREATION_DATE">21-Aug-2015 15:13:01</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="DATA_CMNT">Site M2 ADCP with waves</att>
+        <att name="DATA_ORIGIN">USGS WCMG Sed Trans Group</att>
+        <att name="DATA_SUB_TYPE">MOORED</att>
+        <att name="DATA_TYPE">ADCP</att>
+        <att name="datasetID">AMS15M3T01adc</att>
+        <att name="date_created">2015-08-21T15:13:01</att>
+        <att name="DELTA_T">1200</att>
+        <att name="Deployment_date">13-Feb-2015 01:11</att>
+        <att name="DEPTH_CONST" type="int">0</att>
+        <att name="depth_sensor">YES</att>
+        <att name="DESCRIPT">miniprobe</att>
+        <att name="DRIFTER" type="int">0</att>
+        <att name="ED_taken_from_depth_sensor">YES</att>
+        <att name="EH_taken_from_transducer_heading_sensor">YES</att>
+        <att name="ending_water_layer" type="double">5.0</att>
+        <att name="EP_taken_from_transducer_pitch_sensor">YES</att>
+        <att name="ER_taken_from_transducer_roll_sensor">YES</att>
+        <att name="error_velocity_threshold" type="double">2000.0</att>
+        <att name="ES_derived_from_conductivity_sensor">YES</att>
+        <att name="ET_taken_from_temperature_sensor">YES</att>
+        <att name="EXPERIMENT">AMS15 </att>
+        <att name="experiment_id">AMS15</att>
+        <att name="false_target_reject_values" type="doubleList">255.0 255.0</att>
+        <att name="featureType">timeSeriesProfile</att>
+        <att name="FILL_FLAG" type="int">0</att>
+        <att name="firmware_version" type="double">16.28</att>
+        <att name="frequency" type="double">600.0</att>
+        <att name="geospatial_lat_max" type="float">-14.23906</att>
+        <att name="geospatial_lat_min" type="float">-14.23906</att>
+        <att name="geospatial_lon_max" type="float">-170.67574</att>
+        <att name="geospatial_lon_min" type="float">-170.67574</att>
+        <att name="heading_sensor">YES</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F7RN362H.ipynb; Written to an EPIC standard data file by adcp2ep SVN $Revision: 2101 $; 
+no boundary detected, Bins were trimmed by trimbinsNative SVN $Revision: 2101 $ based on depth sensor input information.
+Converted to netCDF via MATLAB by rdi2cdfNative SVN $Revision: 2143 $
+</att>
+        <att name="id">AMS15M3T01adc</att>
+        <att name="initial_instrument_height" type="float">0.25</att>
+        <att name="initial_instrument_height_note">height in meters above bottom: accurate for tripod mounted instruments</att>
+        <att name="INST_TYPE">RD Instruments ADCP</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="janus">4 Beam</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="lag_length" type="double">53.0</att>
+        <att name="latitude" type="double">-14.23906</att>
+        <att name="latitude_units">degree_north</att>
+        <att name="longitude" type="double">-170.67573</att>
+        <att name="longitude_units">degree_east</att>
+        <att name="magnetic_variation_applied" type="float">11.65</att>
+        <att name="magnetic_variation_at_site" type="float">11.65</att>
+        <att name="metadata_link">https://doi.org/10.5066/F7RN362H</att>
+        <att name="minmax_percent_good" type="doubleList">0.0 100.0</att>
+        <att name="modification_date">21-Aug-2015 15:13:04</att>
+        <att name="MOORING">AMS15M3T</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="nominal_sensor_depth" type="float">23.03475</att>
+        <att name="nominal_sensor_depth_note">inst_depth = (water_depth - inst_height); nominal depth below surface, meters</att>
+        <att name="NOTE_1">transmit_pulse_length units are cm</att>
+        <att name="NOTE_2">transmit_lag_distance units are cm</att>
+        <att name="NOTE_3">bin depths are relative to the seabed</att>
+        <att name="orientation">UP</att>
+        <att name="pings_per_ensemble" type="double">240.0</att>
+        <att name="pitch_sensor">YES</att>
+        <att name="platform_type">Tripod</att>
+        <att name="POS_CONST" type="int">0</att>
+        <att name="pred_accuracy" type="double">0.35</att>
+        <att name="profiling_mode" type="double">1.0</att>
+        <att name="PROJECT">American Samoa</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="Recovery_date">16-Jul-2015 21:40</att>
+        <att name="roll_sensor">YES</att>
+        <att name="salinity_set_by_user" type="float">35.0</att>
+        <att name="salinity_set_by_user_units">PPT</att>
+        <att name="SciPi">Curt Storlazzi</att>
+        <att name="sensor_configuration" type="double">1.0</att>
+        <att name="serial_number" type="double">7419.0</att>
+        <att name="simulated_data" type="double">0.0</att>
+        <att name="Sound_speed_computed_from_ED_ES_ET">YES</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="start_time">12-Feb-2015 15:40:00</att>
+        <att name="starting_water_layer" type="double">1.0</att>
+        <att name="stop_time">16-Jul-2015 10:20:00</att>
+        <att name="summary">In 2015, U.S. Geological Survey (USGS) and U.S. National Park Service (NPS) researchers began a collaborative study to determine coastal circulation patterns and water-column properties along north-central Tutuila, in an area focused on NPSA&#x2019;s Tutuila Unit and its coral reef ecosystem. The continuous measurements of waves, currents, tides, and water-column properties (temperature and salinity) from these instrument deployments, coupled with available meteorological measurements of wind and rainfall, provide information on nearshore circulation and the variability in these hydrodynamic properties for NPSA&#x2019;s Tutuila Unit. These data will complement ongoing and future water quality efforts along north-central Tutuila and in NPSA that will provide baseline information to determine impacts resulting from management and (or) climate change.
+
+The field experiment included collection of continuous oceanographic data, as well as spatially extensive shipboard surveys and drifter deployments in NPSA from February through July 2015. The goals of the experiment were to understand controls on flow patterns and water-column properties in the NPSA. To do this, the USGS and NPS set out to complete the following tasks: 
+
+Measure temporal variability in wave heights, wave periods, wave directions, current speeds, current directions, temperature, and salinity.
+Measure spatial variability in current speeds, current directions, temperature, salinity, chlorophyll, turbidity, and light transmission.
+Track pathways of Lagrangian ocean surface current drifters to understand transport pathways of buoyant surface material (coral larvae, debris, search-and rescue, etc).
+Compile modeled deep-water wave height, wave period, and wave direction data and locally-measured wind speed, wind direction, rainfall and barometric pressure.
+Determine the influence of oceanographic and meteorologic forcing on circulation patterns and water-column properties along north-central Tutuila and in NPSA waters.
+This data release includes data from acoustic doppler current profilers, conductivity-temperature-depth profilers, satellite-tracked Lagrangian surface-current drifters, and other time-series oceanographic data. A full description of the data and findings of the study are included in a USGS Open File Report:
+Storlazzi, C.D., Cheriton, O.M., Rosenberger, K.J., Logan, J.B., and Clark, T.B., 2017, Coastal circulation and water-column properties in the National Park of American Samoa, February&#x2013;July 2015: U.S. Geological Survey Open-File Report 2017&#x2013;1060, 104 p., https://doi.org/10.3133/ofr20171060. </att>
+        <att name="temperature_sensor">YES</att>
+        <att name="time_between_ping_groups" type="double">0.5</att>
+        <att name="time_coverage_duration">P153DT18H40M0S</att>
+        <att name="time_coverage_end">2015-07-16T10:21:00</att>
+        <att name="time_coverage_resolution">P0DT0H20M0S</att>
+        <att name="time_coverage_start">2015-02-12T15:41:00</att>
+        <att name="title">Data from coastal circulation and water-column properties in the National Park of American Samoa, February-July 2015 - AMS15M3T01adc</att>
+        <att name="transducer_attached">1</att>
+        <att name="transducer_offset_from_bottom" type="float">0.25</att>
+        <att name="transform">EARTH</att>
+        <att name="transmit_lag_distance" type="double">25.0</att>
+        <att name="transmit_pulse_length_cm" type="double">123.0</att>
+        <att name="valid_correlation_range" type="doubleList">64.0 255.0</att>
+        <att name="VAR_DESC">bindist:ensemble:u:v:w:Werr:AGC:PGd:brange:Tx:SV:Hdg:Ptch:Roll:P:SDP</att>
+        <att name="VAR_FILL" type="float">1.0E35</att>
+        <att name="WATER_DEPTH" type="float">23.28475</att>
+        <att name="WATER_DEPTH_datum">not yet assigned</att>
+        <att name="WATER_DEPTH_source">water depth = MSL from pressure sensor, by trimbins</att>
+        <att name="WATER_MASS">?</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeriesProfile</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="CREATION_DATE">null</att>
+        <att name="creation_date">21-Aug-2015 15:13:01</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2015-08-21T15:13:01Z</att>
+        <att name="EXPERIMENT">AMS15</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F7RN362H.ipynb; Written to an EPIC standard data file by adcp2ep SVN $Revision: 2101 $; 
+no boundary detected, Bins were trimmed by trimbinsNative SVN $Revision: 2101 $ based on depth sensor input information.
+Converted to netCDF via MATLAB by rdi2cdfNative SVN $Revision: 2143 $</att>
+        <att name="infoUrl">https://doi.org/10.5066/F7RN362H</att>
+        <att name="keywords">acoustic, acoustics, adcp, agc, AGC_1202, american, ams15m3t01adc, angle, average, bin, bindist, boundary, brange, circulation, coastal, column, conductivity, ctd, current, currents, data, depth, dev, distance, doppler, earth, Earth Science &gt; Oceans &gt; Ocean Acoustics &gt; Acoustic Velocity, Earth Science &gt; Oceans &gt; Ocean Circulation &gt; Ocean Currents, Earth Science &gt; Oceans &gt; Ocean Pressure &gt; Water Pressure, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, eastward, eastward_sea_water_velocity, echo, ensemble, error, feature, feature_type_instance, february-july, geological, geology, good, Hdg_1215, head, heading, identifier, index, inst, instance, instrument, intensity, latitude, longitude, marine, measurement, national, naval, northward, northward_sea_water_velocity, nps, number, ocean, oceanography, oceans, orientation, P_1294, park, percent, PGd_1203, pings, pitch, platform, platform_orientation, platform_pitch_angle, platform_roll_angle, postgraduate, press, pressure, profile, profile_index, profiler, program, properties, Ptch_1216, range, Rec, roll, Roll_1217, samoa, school, science, SDP_850, sea, sea_water_pressure, sea_water_temperature, seawater, sediment transport, sensor, sonde, sound, speed, speed_of_sound_in_sea_water, stand, states, statistics, survey, SV_80, temperature, time, transducer, Tx_1211, type, u_1205, united, upward, upward_sea_water_velocity, usgs, v_1206, velocity, vertical, w_1204, water, water-column, Werr_1201</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="latitude_units">null</att>
+        <att name="license">[standard]</att>
+        <att name="longitude_units">null</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="start_time">null</att>
+        <att name="stop_time">null</att>
+        <att name="subsetVariables">longitude, latitude, brange, feature_type_instance</att>
+        <att name="summary">Data from coastal circulation and water-column properties in the National Park of American Samoa, February-July 2015 - AMS15M3T01adc. In 2015, U.S. Geological Survey (United States Geological Survey (USGS)) and U.S. National Park Service (Naval Postgraduate School (NPS)) researchers began a collaborative study to determine coastal circulation patterns and water-column properties along north-central Tutuila, in an area focused on NPSA&#39;s Tutuila Unit and its coral reef ecosystem. The continuous measurements of waves, currents, tides, and water-column properties (temperature and salinity) from these instrument deployments, coupled with available meteorological measurements of wind and rainfall, provide information on nearshore circulation and the variability in these hydrodynamic properties for NPSA&#39;s Tutuila Unit. These data will complement ongoing and future water quality efforts along north-central Tutuila and in NPSA that will provide baseline information to determine impacts resulting from management and (or) climate change.
+
+The field experiment included collection of continuous oceanographic data, as well as spatially extensive shipboard surveys and drifter deployments in NPSA from February through July 2015. The goals of the experiment were to understand controls on flow patterns and water-column properties in the NPSA. To do this, the USGS and NPS set out to complete the following tasks: 
+
+Measure temporal variability in wave heights, wave periods, wave directions, current speeds, current directions, temperature, and salinity.
+Measure spatial variability in current speeds, current directions, temperature, salinity, chlorophyll, turbidity, and light transmission.
+Track pathways of Lagrangian ocean surface current drifters to understand transport pathways of buoyant surface material (coral larvae, debris, search-and rescue, etc).
+Compile modeled deep-water wave height, wave period, and wave direction data and locally-measured wind speed, wind direction, rainfall and barometric pressure.
+Determine the influence of oceanographic and meteorologic forcing on circulation patterns and water-column properties along north-central Tutuila and in NPSA waters.
+This data release includes data from acoustic doppler current profilers, conductivity-temperature-depth profilers, satellite-tracked Lagrangian surface-current drifters, and other time-series oceanographic data. A full description of the data and findings of the study are included in a USGS Open File Report:
+Storlazzi, C.D., Cheriton, O.M., Rosenberger, K.J., Logan, J.B., and Clark, T.B., 2017, Coastal circulation and water-column properties in the National Park of American Samoa, February-July 2015: U.S. Geological Survey Open-File Report 2017-1060, 104 p., https://doi.org/10.3133/ofr20171060.</att>
+        <att name="time_coverage_end">2015-07-16T10:21:00Z</att>
+        <att name="time_coverage_start">2015-02-12T15:41:00Z</att>
+        <att name="title">Data from coastal circulation and water-column properties in the National Park of American Samoa, February-July 2015, AMS15M3T01adc</att>
+        <att name="WATER_MASS">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1024</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">minutes since 2015-02-12 15:41:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="units">minutes since 2015-02-12T15:41:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="bin_count" type="double">25.0</att>
+            <att name="bin_size" type="double">1.0</att>
+            <att name="blanking_distance" type="double">0.88</att>
+            <att name="center_first_bin" type="double">2.12</att>
+            <att name="datum">not yet assigned</att>
+            <att name="epic_code" type="double">3.0</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="long_name">DEPTH (M)</att>
+            <att name="maximum" type="double">24.3700008392334</att>
+            <att name="minimum" type="double">2.369999885559082</att>
+            <att name="NOTE">uplooking bin depths = water_depth - transducer_offset_from_bottom - bindist</att>
+            <att name="positive">down</att>
+            <att name="standard_name">height</att>
+            <att name="transducer_offset_from_bottom" type="double">0.25</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+            <att name="WATER_DEPTH" type="float">23.28475</att>
+            <att name="WATER_DEPTH_datum">not yet assigned</att>
+            <att name="WATER_DEPTH_source">water depth = MSL from pressure sensor, by trimbins</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="data_max" type="double">24.3700008392334</att>
+            <att name="data_min" type="double">2.369999885559082</att>
+            <att name="ioos_category">Location</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+            <att name="source_name">z</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>bindist</sourceName>
+        <destinationName>bindist</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="bin_size" type="float">1.0</att>
+            <att name="blanking_distance" type="float">0.88</att>
+            <att name="center_first_bin" type="float">2.12</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">0</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">bindist</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">bin distance from instrument (m)</att>
+            <att name="maximum" type="float">24.12</att>
+            <att name="minimum" type="float">2.12</att>
+            <att name="name">bindist</att>
+            <att name="NOTE">distance is along profile from instrument head to center of bin</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="transducer_offset_from_bottom" type="float">0.25</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">24.12</att>
+            <att name="data_min" type="float">2.12</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Rec</sourceName>
+        <destinationName>Rec</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">0</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">ensemble</att>
+            <att name="long_name">ensemble number</att>
+            <att name="maximum" type="float">11102.0</att>
+            <att name="minimum" type="float">30.0</att>
+            <att name="name">ensemble</att>
+            <att name="type">EVEN</att>
+            <att name="units">count</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">11102.0</att>
+            <att name="data_min" type="float">30.0</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="datum">NAD83</att>
+            <att name="epic_code" type="int">502</att>
+            <att name="FORTRAN_format">f10.4</att>
+            <att name="generic_name">lon</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="name">LON</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="datum">NAD83</att>
+            <att name="epic_code" type="int">500</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">lat</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="name">LAT</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>u_1205</sourceName>
+        <destinationName>u_1205</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 23</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1205</att>
+            <att name="generic_name">u</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">Eastward Velocity</att>
+            <att name="maximum" type="floatList">19.00233 20.489538 22.014154 22.233255 22.620945 25.061407 27.966263 29.355581 30.018932 30.540932 30.702477 30.308681 31.09528 34.644337 36.061935 38.841614 39.2041 26.550648 64.886696 96.19002 91.76654 94.920815 59.927975</att>
+            <att name="minimum" type="floatList">-28.577175 -27.952175 -26.17814 -26.869774 -26.97982 -26.810186 -25.847954 -26.304363 -27.375648 -26.09836 -26.738491 -27.412958 -27.706778 -28.378216 -27.571478 -27.972317 -21.900091 -16.686054 -53.96788 -67.25239 -66.60918 -59.53919 -34.062855</att>
+            <att name="name">u</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="standard_name">eastward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+            <att name="valid_range" type="floatList">-1000.0 1000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="floatList">19.00233 20.489538 22.014154 22.233255 22.620945 25.061407 27.966263 29.355581 30.018932 30.540932 30.702477 30.308681 31.09528 34.644337 36.061935 38.841614 39.2041 26.550648 64.886696 96.19002 91.76654 94.920815 59.927975</att>
+            <att name="data_min" type="floatList">-28.577175 -27.952175 -26.17814 -26.869774 -26.97982 -26.810186 -25.847954 -26.304363 -27.375648 -26.09836 -26.738491 -27.412958 -27.706778 -28.378216 -27.571478 -27.972317 -21.900091 -16.686054 -53.96788 -67.25239 -66.60918 -59.53919 -34.062855</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>v_1206</sourceName>
+        <destinationName>v_1206</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 23</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1206</att>
+            <att name="generic_name">v</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">Northward Velocity</att>
+            <att name="maximum" type="floatList">23.563139 26.457924 25.21095 27.03951 27.60294 30.451286 31.553879 31.982008 31.761917 30.574532 30.32616 31.120792 32.00528 33.353218 33.802532 35.217102 36.586227 32.879642 29.411306 61.686977 65.53794 47.136295 37.98139</att>
+            <att name="minimum" type="floatList">-19.46688 -18.834837 -19.59305 -20.145416 -19.690989 -19.474916 -20.117083 -20.168583 -20.763319 -21.029902 -21.675095 -22.071915 -22.743355 -22.901875 -22.158741 -22.648441 -20.851137 -25.375525 -44.600086 -83.520645 -84.226364 -75.048035 -67.00798</att>
+            <att name="name">v</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="standard_name">northward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+            <att name="valid_range" type="floatList">-1000.0 1000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="floatList">23.563139 26.457924 25.21095 27.03951 27.60294 30.451286 31.553879 31.982008 31.761917 30.574532 30.32616 31.120792 32.00528 33.353218 33.802532 35.217102 36.586227 32.879642 29.411306 61.686977 65.53794 47.136295 37.98139</att>
+            <att name="data_min" type="floatList">-19.46688 -18.834837 -19.59305 -20.145416 -19.690989 -19.474916 -20.117083 -20.168583 -20.763319 -21.029902 -21.675095 -22.071915 -22.743355 -22.901875 -22.158741 -22.648441 -20.851137 -25.375525 -44.600086 -83.520645 -84.226364 -75.048035 -67.00798</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>w_1204</sourceName>
+        <destinationName>w_1204</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 23</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1204</att>
+            <att name="generic_name">w</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">Vertical Velocity</att>
+            <att name="maximum" type="floatList">4.0 4.6 4.5 5.9 6.4 6.7 6.8 5.8 4.8 5.0 5.3 5.0 4.5 3.9 3.5 2.9 2.9 3.0 7.9 9.8 8.2 15.5 15.5</att>
+            <att name="minimum" type="floatList">-6.2 -7.0 -8.2 -8.8 -9.6 -9.5 -10.1 -10.0 -10.4 -9.8 -9.4 -8.2 -7.5 -6.6 -5.6 -4.1 -4.3 -3.5 -6.3 -10.0 -7.9 -12.2 -6.6</att>
+            <att name="name">w</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="standard_name">upward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+            <att name="valid_range" type="floatList">-1000.0 1000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="floatList">4.0 4.6 4.5 5.9 6.4 6.7 6.8 5.8 4.8 5.0 5.3 5.0 4.5 3.9 3.5 2.9 2.9 3.0 7.9 9.8 8.2 15.5 15.5</att>
+            <att name="data_min" type="floatList">-6.2 -7.0 -8.2 -8.8 -9.6 -9.5 -10.1 -10.0 -10.4 -9.8 -9.4 -8.2 -7.5 -6.6 -5.6 -4.1 -4.3 -3.5 -6.3 -10.0 -7.9 -12.2 -6.6</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Werr_1201</sourceName>
+        <destinationName>Werr_1201</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 23</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1201</att>
+            <att name="FORTRAN_format">F8.1</att>
+            <att name="generic_name">w</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">Error Velocity</att>
+            <att name="maximum" type="floatList">6.0 6.6 6.0 5.9 6.1 7.5 7.5 8.2 7.8 8.3 8.4 8.5 8.1 8.4 11.1 10.6 9.2 13.0 33.0 34.9 35.5 29.9 28.2</att>
+            <att name="minimum" type="floatList">-4.2 -5.0 -5.9 -5.9 -6.4 -6.6 -7.5 -8.8 -8.9 -10.1 -9.6 -9.7 -13.1 -11.6 -13.5 -14.3 -13.2 -18.8 -14.3 -32.3 -24.7 -34.6 -75.5</att>
+            <att name="name">Werr</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="units">cm/s</att>
+            <att name="valid_range" type="float">2000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">50.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="floatList">6.0 6.6 6.0 5.9 6.1 7.5 7.5 8.2 7.8 8.3 8.4 8.5 8.1 8.4 11.1 10.6 9.2 13.0 33.0 34.9 35.5 29.9 28.2</att>
+            <att name="data_min" type="floatList">-4.2 -5.0 -5.9 -5.9 -6.4 -6.6 -7.5 -8.8 -8.9 -10.1 -9.6 -9.7 -13.1 -11.6 -13.5 -14.3 -13.2 -18.8 -14.3 -32.3 -24.7 -34.6 -75.5</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>AGC_1202</sourceName>
+        <destinationName>AGC_1202</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 23</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1202</att>
+            <att name="FORTRAN_format">F5.1</att>
+            <att name="generic_name">AGC</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">Average Echo Intensity (AGC)</att>
+            <att name="maximum" type="floatList">165.5 161.5 157.5 153.0 149.0 144.75 141.0 138.0 135.25 132.5 130.25 128.5 129.0 127.0 126.0 124.75 143.0 166.25 197.0 211.75 203.75 172.0 140.5</att>
+            <att name="minimum" type="floatList">90.0 85.0 80.5 77.75 74.75 70.5 67.25 65.0 62.0 60.0 58.75 57.75 58.25 57.75 55.25 54.0 52.75 52.0 104.25 86.5 63.5 54.0 48.75</att>
+            <att name="name">AGC</att>
+            <att name="norm_factor" type="float">0.45</att>
+            <att name="NOTE">normalization to db</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="units">counts</att>
+            <att name="valid_range" type="floatList">255.0 255.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="floatList">165.5 161.5 157.5 153.0 149.0 144.75 141.0 138.0 135.25 132.5 130.25 128.5 129.0 127.0 126.0 124.75 143.0 166.25 197.0 211.75 203.75 172.0 140.5</att>
+            <att name="data_min" type="floatList">90.0 85.0 80.5 77.75 74.75 70.5 67.25 65.0 62.0 60.0 58.75 57.75 58.25 57.75 55.25 54.0 52.75 52.0 104.25 86.5 63.5 54.0 48.75</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+            <att name="units">count</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>PGd_1203</sourceName>
+        <destinationName>PGd_1203</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 23</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1203</att>
+            <att name="generic_name">PGd</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">Percent Good Pings</att>
+            <att name="maximum" type="floatList">100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0</att>
+            <att name="minimum" type="floatList">98.0 97.0 97.0 97.0 97.0 97.0 97.0 97.0 97.0 97.0 95.0 95.0 90.0 90.0 85.0 68.0 62.0 31.0 0.0 2.0 4.0 7.0 0.0</att>
+            <att name="name">PGd</att>
+            <att name="NOTE">Percentage of good 4-beam solutions (Field #4)</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="units">percent</att>
+            <att name="valid_range" type="floatList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="floatList">100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0 100.0</att>
+            <att name="data_min" type="floatList">98.0 97.0 97.0 97.0 97.0 97.0 97.0 97.0 97.0 97.0 95.0 95.0 90.0 90.0 85.0 68.0 62.0 31.0 0.0 2.0 4.0 7.0 0.0</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>brange</sourceName>
+        <destinationName>brange</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">0</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">brange</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">range from instrument head to boundary</att>
+            <att name="maximum" type="float">NaN</att>
+            <att name="minimum" type="float">NaN</att>
+            <att name="name">brange</att>
+            <att name="NOTE">no boundary detected, range to boundary based on findsurface.m output</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="units">m</att>
+            <att name="valid_range" type="floatList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">NaN</att>
+            <att name="data_min" type="float">NaN</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Tx_1211</sourceName>
+        <destinationName>Tx_1211</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1211</att>
+            <att name="generic_name">temp</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">instrument Transducer Temp.</att>
+            <att name="maximum" type="float">30.45</att>
+            <att name="minimum" type="float">27.89</att>
+            <att name="name">Tx</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="units">degree_C</att>
+            <att name="valid_range" type="floatList">-5.0 40.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">30.45</att>
+            <att name="data_min" type="float">27.89</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SV_80</sourceName>
+        <destinationName>SV_80</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">80</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">SOUND VELOCITY (M/S)</att>
+            <att name="maximum" type="float">1547.0</att>
+            <att name="minimum" type="float">1541.0</att>
+            <att name="name">SV</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="standard_name">speed_of_sound_in_sea_water</att>
+            <att name="units">m s-1</att>
+            <att name="valid_range" type="floatList">1400.0 1600.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">1650.0</att>
+            <att name="colorBarMinimum" type="double">1350.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">1547.0</att>
+            <att name="data_min" type="float">1541.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Hdg_1215</sourceName>
+        <destinationName>Hdg_1215</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1215</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">hdg</att>
+            <att name="heading_alignment_EH" type="float">0.0</att>
+            <att name="heading_bias_EB" type="float">0.0</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">INST Heading             </att>
+            <att name="maximum" type="float">78.92</att>
+            <att name="minimum" type="float">78.49</att>
+            <att name="name">Hdg</att>
+            <att name="NOTE">no heading bias was applied by EB during deployment or by wavesmon</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial" type="int">7419</att>
+            <att name="standard_name">platform_orientation</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="floatList">0.0 360.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">400.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">78.92</att>
+            <att name="data_min" type="float">78.49</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">INST Heading</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Ptch_1216</sourceName>
+        <destinationName>Ptch_1216</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1216</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">ptch</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">INST Pitch             </att>
+            <att name="maximum" type="float">-4.72</att>
+            <att name="minimum" type="float">-4.93</att>
+            <att name="name">Ptch</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial" type="int">7419</att>
+            <att name="standard_name">platform_pitch_angle</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="floatList">-180.0 180.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">200.0</att>
+            <att name="colorBarMinimum" type="double">-200.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">-4.72</att>
+            <att name="data_min" type="float">-4.93</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">INST Pitch</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Roll_1217</sourceName>
+        <destinationName>Roll_1217</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1217</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">roll</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">INST Roll             </att>
+            <att name="maximum" type="float">-2.59</att>
+            <att name="minimum" type="float">-2.87</att>
+            <att name="name">Roll</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial" type="int">7419</att>
+            <att name="standard_name">platform_roll_angle</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="floatList">-180.0 180.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">200.0</att>
+            <att name="colorBarMinimum" type="double">-200.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">-2.59</att>
+            <att name="data_min" type="float">-2.87</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">INST Roll</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>P_1294</sourceName>
+        <destinationName>P_1294</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="AZ_applied">unknown</att>
+            <att name="comment">Pressure may or may not include atmospheric pressure and sensor drift</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1294</att>
+            <att name="FORTRAN_format">f15.2</att>
+            <att name="generic_name">pres</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">Pressure at Transducer Head</att>
+            <att name="maximum" type="float">23301.0</att>
+            <att name="minimum" type="float">21912.0</att>
+            <att name="name">P</att>
+            <att name="NOTE">unknown if pressure was zeroed before deployment</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="standard_name">sea_water_pressure</att>
+            <att name="units">dekapascals</att>
+            <att name="valid_range" type="floatList">219120.0 233010.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="AZ_applied">null</att>
+            <att name="colorBarMaximum" type="double">5000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">23301.0</att>
+            <att name="data_min" type="float">21912.0</att>
+            <att name="ioos_category">Pressure</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SDP_850</sourceName>
+        <destinationName>SDP_850</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="cell_methods">time: standard_deviation</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">850</att>
+            <att name="generic_name">pres</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.25</att>
+            <att name="long_name">STAND. DEV. (PRESS)     </att>
+            <att name="maximum" type="float">5610.0</att>
+            <att name="minimum" type="float">310.0</att>
+            <att name="name">SDP</att>
+            <att name="sensor_depth" type="float">23.03475</att>
+            <att name="sensor_type">RD Instruments ADCP</att>
+            <att name="serial_number" type="int">7419</att>
+            <att name="standard_name">sea_water_pressure</att>
+            <att name="units">mbar</att>
+            <att name="valid_range" type="floatList">0.0 5000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">5000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">5610.0</att>
+            <att name="data_min" type="float">310.0</att>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">STAND. DEV. (PRESS)</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">latitude longitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>profile_index</sourceName>
+        <destinationName>profile_index</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1007</att>
+            <att name="cf_role">profile_id</att>
+            <att name="coordinates">latitude longitude</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Profile Index</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

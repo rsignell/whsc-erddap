@@ -1,0 +1,70 @@
+<dataset type="EDDTableFromNcFiles" datasetID="obspy" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/rsignell/data/obspy/</fileDir>
+    <fileNameRegex>foo2.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <preExtractRegex></preExtractRegex>
+    <postExtractRegex></postExtractRegex>
+    <extractRegex></extractRegex>
+    <columnNameForExtract></columnNameForExtract>
+    <sortedColumnSourceName>index</sortedColumnSourceName>
+    <sortFilesBySourceNames>index</sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="_NCProperties">version=1|netcdflibversion=4.4.1.1|hdf5libversion=1.8.18</att>
+        <att name="history">Wed Aug 23 12:50:41 2017: ncks -4 -L 7 - - cnk_csh=1000000000 - - cnk_plc=plc_all - - cnk_dmn=index,1000000 foo.nc foo2.nc</att>
+        <att name="NCO">&quot;4.6.5&quot;</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+        <att name="subsetVariables">station, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">Other</att>
+        <att name="Conventions">COARDS, CF-1.6, ACDD-1.3</att>
+        <att name="creator_name">USGS</att>
+        <att name="creator_url">http://www.usgs.gov/</att>
+        <att name="infoUrl">http://www.usgs.gov/</att>
+        <att name="institution">USGS</att>
+        <att name="keywords">data, geological, index, local, source, states, stream1, survey, time, united, usgs</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
+        <att name="summary">Data from a local source.</att>
+        <att name="title">Data from a local source.</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>index</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1000000</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="units">seconds since 2017-08-19 23:55:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Index</att>
+            <att name="standard_name">time</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>stream1</sourceName>
+        <destinationName>stream1</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1000000</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Stream1</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>

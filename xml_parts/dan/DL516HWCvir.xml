@@ -1,0 +1,296 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="DL516HWCvir">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-F73R0R07/</fileDir>
+    <fileNameRegex>DL516HWCvir.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="basefilename">054072_DL516HWC02</att>
+        <att name="calibration_Date">27-May-2016 16:15:52</att>
+        <att name="calibration_FitOrder">linear</att>
+        <att name="calibration_Units">mg/l</att>
+        <att name="calibration_Values" type="doubleList">0.8328851718911596 0.7099274635044295</att>
+        <att name="cdfFilename">DL516HWCTu.nc</att>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="CollaboratingAgency">NRP, CA WSC</att>
+        <att name="COMPOSITE" type="double">0.0</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHICAL</att>
+        <att name="CREATION_DATE">27-Sep-2016 11:30:49</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="CruiseID">2016-623-FA</att>
+        <att name="DATA_CMT">San Francisco Bay Delta RBR Virtuoso-Tu</att>
+        <att name="DATA_ORIGIN">USGS PCMSC</att>
+        <att name="DATA_TYPE">TIME</att>
+        <att name="datasetID">DL516HWCvir</att>
+        <att name="date_created">2016-09-27T11:30:49</att>
+        <att name="Deployment_date">12-APR-2016 16:54</att>
+        <att name="DEPTH_CONST" type="double">0.0</att>
+        <att name="DESCRIPT">unknown</att>
+        <att name="DESCRIPTION">weight stand</att>
+        <att name="DRIFTER" type="double">0.0</att>
+        <att name="drops">yes</att>
+        <att name="EXPERIMENT">DL516HWC</att>
+        <att name="experiment_id">DL516</att>
+        <att name="featureType">timeSeries</att>
+        <att name="FILL_FLAG" type="double">1.0E35</att>
+        <att name="geospatial_lat_max" type="double">38.30854</att>
+        <att name="geospatial_lat_min" type="double">38.30854</att>
+        <att name="geospatial_lon_max" type="double">-121.65867</att>
+        <att name="geospatial_lon_min" type="double">-121.65867</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F73R0R07.ipynb; </att>
+        <att name="id">DL516HWCvir</att>
+        <att name="initial_instrument_height" type="double">0.25</att>
+        <att name="INST_TYPE">RBR Virtuoso Turbidity Logger</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="instrument_number">DL516HWC02</att>
+        <att name="interval" type="double">300.0</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="latitude" type="double">38.30854</att>
+        <att name="loggerType">Virtuoso</att>
+        <att name="longitude" type="double">-121.65867</att>
+        <att name="magnetic_variation" type="double">13.65</att>
+        <att name="metadata_link">https://doi.org/10.5066/F73R0R07</att>
+        <att name="mode">average</att>
+        <att name="MOORING">DL516HWC</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="nominal_instrument_depth" type="double">1.0</att>
+        <att name="number_of_samples" type="double">16390.0</att>
+        <att name="OFAFunding">USBR</att>
+        <att name="platform_type">Tripod</att>
+        <att name="POS_CONST" type="double">0.0</att>
+        <att name="PROGRAM">Sediment Transport in Coastal Environments</att>
+        <att name="PROJECT">Delta habitat evaluation</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="range">500</att>
+        <att name="raw_filename">054072_DL516HWC02.rsk</att>
+        <att name="Recovery_date">08-JUN-2016 14:41</att>
+        <att name="Region">Sacramento-San Joaquin Delta</att>
+        <att name="SciPi">Jessica Lacy</att>
+        <att name="serial_number" type="double">54072.0</att>
+        <att name="Site">HWC</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="start_time">12-Apr-2016 16:55:00</att>
+        <att name="STD">yes</att>
+        <att name="stop_time">08-Jun-2016 14:40:00</att>
+        <att name="summary">Data were collected by the U.S. Geological Survey (USGS) Pacific Coastal and Marine Science Center to investigate the influence of wind waves on sediment dynamics in two flooded agricultural tracts in the northern Sacramento-San Joaquin Delta: Little Holland Tract and Liberty Island. This effort is part of a large interdisciplinary study led by the USGS California Water Science Center and funded by the U.S. Bureau of Reclamation to investigate how shallow-water habitats in the Sacramento-San Joaquin Delta function and whether they provide good habitat for native fish species, including the Delta smelt. Elevated turbidity is a requirement for Delta smelt habitat, and turbidity is largely comprised of suspended sediment. Wind waves develop in large open-water regions with large fetch, and can increase turbidity by mobilizing bottom sediments.
+
+Data were collected from several sites in Little Holland Tract (LHT) and Liberty Island (LI), including the Liberty Island Conservation Bank (LICB), from 2015 to 2017. Table 1 (below) lists the deployment name (DLXXX) and dates for each sampling station location. Station names starting with &#x2018;H&#x2019; are in LHT; station names starting with &#x2018;L&#x2019; are in LI, and the station name starting with &#x2018;W&#x2019; is in LICB. At stations with a &#x2018;W&#x2019; as the second character of the station name, we collected water-level, wind-wave, and turbidity time-series data. At stations with a &#x2018;V&#x2019; as the second character of the station name, we collected water-level, wind-wave, and turbidity, as well as velocity time-series data. The turbidity sensors were calibrated to suspended-sediment concentration measured in water samples collected on site (tables 2a,b) for LHT and LI. Details on instrumentation and sampling are included on the individual pages for each station (see links below). Data were sequentially added to this data release as they were retrieved and post-processed. </att>
+        <att name="time_coverage_duration">P56DT21H45M0S</att>
+        <att name="time_coverage_end">2016-06-08T14:40:00</att>
+        <att name="time_coverage_resolution">P0DT0H5M0S</att>
+        <att name="time_coverage_start">2016-04-12T16:55:00</att>
+        <att name="title">Wind-wave and suspended-sediment data from Liberty Island and Little Holland Tract, Sacramento-San Joaquin Delta, California (ver. 2.0, September 2019) - DL516HWCvir</att>
+        <att name="txt_filename">054072_DL516HWC02_eng.txt</att>
+        <att name="WATER_DEPTH" type="double">-1.0</att>
+        <att name="WATER_DEPTH_datum">MSL</att>
+        <att name="WATER_DEPTH_SOURCE">DEM of Little Holland</att>
+        <att name="WATER_DEPTH_source">User Input</att>
+        <att name="WATER_MASS">?</att>
+        <att name="Year" type="double">2016.0</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="CREATION_DATE">null</att>
+        <att name="creation_date">27-Sep-2016 11:30:49</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2016-09-27T11:30:49Z</att>
+        <att name="DESCRIPT">null</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F73R0R07.ipynb;</att>
+        <att name="infoUrl">https://doi.org/10.5066/F73R0R07</att>
+        <att name="keywords">california, chemistry, coastal, concentration, data, delta, depth, dl516hwcvir, earth, Earth Science &gt; Oceans &gt; Marine Sediments &gt; Particle Flux, Earth Science &gt; Oceans &gt; Marine Sediments &gt; Sediment Transport, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Suspended Solids, feature, feature_type_instance, flux, geological, geology, holland, identifier, instance, island, joaquin, latitude, liberty, little, longitude, marine, mass, mass_concentration_of_suspended_matter_in_sea_water, matter, measurement, nephelometric, ntu, ocean, oceanography, oceans, particle, physical, physical oceanography, program, sacramento, sacramento-san, san, science, sea, sea_water_turbidity, seawater, SED_981, sediment, sediment transport, sediments, sensor, solids, states, survey, suspended, suspended-sediment, time, tract, transport, Trb_980, turbidity, type, united, units, usgs, water, wave, wind, wind-wave</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="PROGRAM">null</att>
+        <att name="program">Sediment Transport in Coastal Environments</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="start_time">null</att>
+        <att name="stop_time">null</att>
+        <att name="subsetVariables">latitude, longitude, depth, feature_type_instance</att>
+        <att name="summary">Wind-wave and suspended-sediment data from Liberty Island and Little Holland Tract, Sacramento-San Joaquin Delta, California (ver. 2.0, September 2019) - DL516HWCvir. Data were collected by the U.S. Geological Survey (United States Geological Survey (USGS)) Pacific Coastal and Marine Science Center to investigate the influence of wind waves on sediment dynamics in two flooded agricultural tracts in the northern Sacramento-San Joaquin Delta: Little Holland Tract and Liberty Island. This effort is part of a large interdisciplinary study led by the USGS California Water Science Center and funded by the U.S. Bureau of Reclamation to investigate how shallow-water habitats in the Sacramento-San Joaquin Delta function and whether they provide good habitat for native fish species, including the Delta smelt. Elevated turbidity is a requirement for Delta smelt habitat, and turbidity is largely comprised of suspended sediment. Wind waves develop in large open-water regions with large fetch, and can increase turbidity by mobilizing bottom sediments.
+
+Data were collected from several sites in Little Holland Tract (LHT) and Liberty Island (LI), including the Liberty Island Conservation Bank (LICB), from 2015 to 2017. Table 1 (below) lists the deployment name (DLXXX) and dates for each sampling station location. Station names starting with &#39;H&#39; are in LHT; station names starting with &#39;L&#39; are in LI, and the station name starting with &#39;W&#39; is in LICB. At stations with a &#39;W&#39; as the second character of the station name, we collected water-level, wind-wave, and turbidity time-series data. At stations with a &#39;V&#39; as the second character of the station name, we collected water-level, wind-wave, and turbidity, as well as velocity time-series data. The turbidity sensors were calibrated to suspended-sediment concentration measured in water samples collected on site (tables 2a,b) for LHT and LI. Details on instrumentation and sampling are included on the individual pages for each station (see links below). Data were sequentially added to this data release as they were retrieved and post-processed.</att>
+        <att name="time_coverage_end">2016-06-08T14:40:00Z</att>
+        <att name="time_coverage_start">2016-04-12T16:55:00Z</att>
+        <att name="title">Wind-wave and suspended-sediment data from Liberty Island and Little Holland Tract, Sacramento-San Joaquin Delta, California (ver. 2.0, September 2019), DL516HWCvir</att>
+        <att name="WATER_MASS">null</att>
+        <att name="Year">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">T</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">minutes since 2016-04-12 16:55:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="units">minutes since 2016-04-12T16:55:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="epic_code" type="double">500.0</att>
+            <att name="FORTRAN_format">F10.4</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="maximum" type="double">1.0E35</att>
+            <att name="minimum" type="double">1.0E35</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="data_max" type="double">1.0E35</att>
+            <att name="data_min" type="double">1.0E35</att>
+            <att name="ioos_category">Location</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="epic_code" type="double">502.0</att>
+            <att name="FORTRAN_format">F10.4</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="maximum" type="double">1.0E35</att>
+            <att name="minimum" type="double">1.0E35</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="data_max" type="double">1.0E35</att>
+            <att name="data_min" type="double">1.0E35</att>
+            <att name="ioos_category">Location</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="epic_code" type="double">3.0</att>
+            <att name="initial_sensor_height" type="double">0.25</att>
+            <att name="long_name">mean water depth</att>
+            <att name="positive">down</att>
+            <att name="standard_name">height</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="source_name">z</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Trb_980</sourceName>
+        <destinationName>Trb_980</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="double">980.0</att>
+            <att name="initial_sensor_height" type="double">0.25</att>
+            <att name="long_name">TURBIDITY (NTU)</att>
+            <att name="maximum" type="double">408.6925434</att>
+            <att name="minimum" type="double">-17.2114979</att>
+            <att name="name">trb</att>
+            <att name="sensor_manufacturer">Seapoint</att>
+            <att name="sensor_type">Seapoint Turbidity Meter</att>
+            <att name="serial_number" type="double">54072.0</att>
+            <att name="standard_name">sea_water_turbidity</att>
+            <att name="units">NTU</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">408.6925434</att>
+            <att name="data_min" type="double">-17.2114979</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SED_981</sourceName>
+        <destinationName>SED_981</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="double">981.0</att>
+            <att name="long_name">Sediment concentration</att>
+            <att name="maximum" type="double">335.66115253384606</att>
+            <att name="minimum" type="double">10.614076208362427</att>
+            <att name="name">Sed</att>
+            <att name="standard_name">mass_concentration_of_suspended_matter_in_sea_water</att>
+            <att name="units">mg/l</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">1.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">335.66115253384606</att>
+            <att name="data_min" type="double">10.614076208362427</att>
+            <att name="ioos_category">Physical Oceanography</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">longitude latitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

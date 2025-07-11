@@ -1,0 +1,296 @@
+<dataset type="EDDTableFromNcCFFiles" datasetID="9402ysi-a" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/silt/usgs/Projects/stellwagen/CF-1.6/WFAL</fileDir>
+    <fileNameRegex>9402ysi-a.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <preExtractRegex></preExtractRegex>
+    <postExtractRegex></postExtractRegex>
+    <extractRegex></extractRegex>
+    <columnNameForExtract></columnNameForExtract>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>false</accessibleViaFiles>
+    <addAttributes>
+        <att name="Conventions">CF-1.6,ACDD-1.3, COARDS</att>
+        <att name="cdm_data_type">timeSeries</att>
+        <att name="cdm_timeseries_variables">latitude, longitude, altitude, feature_type_instance</att>
+        <att name="subsetVariables">latitude, longitude, altitude, feature_type_instance</att>
+        <att name="infoUrl">https://stellwagen.er.usgs.gov/</att>
+        <att name="keywords">feature_type_instance,latitude,longitude,crs,platform,time,z,BPR_1301,Bat_106,CHL_A,DO,D_3,Fch_906,ORP,OST_62,S_40,SpC_48,T_28,Turb,pH_159</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v29</att>
+    </addAttributes>
+    
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <addAttributes>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            
+            <att name="ioos_category">Location</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            
+            <att name="ioos_category">Location</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>crs</sourceName>
+        <destinationName>crs</destinationName>
+        <dataType>int</dataType>
+        <addAttributes>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>platform</sourceName>
+        <destinationName>platform</destinationName>
+        <dataType>int</dataType>
+        <addAttributes>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+            
+            <att name="ioos_category">Time</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>altitude</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            
+            <att name="ioos_category">Location</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>BPR_1301</sourceName>
+        <destinationName>BPR_1301</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">12.8366591281074</att>
+            <att name="colorBarMinimum" type="double">10.9771430861853</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>Bat_106</sourceName>
+        <destinationName>Bat_106</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">12.8</att>
+            <att name="colorBarMinimum" type="double">10.9</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>CHL_A</sourceName>
+        <destinationName>CHL_A</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">14.4</att>
+            <att name="colorBarMinimum" type="double">-4.2</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>DO</sourceName>
+        <destinationName>DO</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">0.01039</att>
+            <att name="colorBarMinimum" type="double">0.00323</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>D_3</sourceName>
+        <destinationName>D_3</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">2.737</att>
+            <att name="colorBarMinimum" type="double">0.877</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>Fch_906</sourceName>
+        <destinationName>Fch_906</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">6.0299999999999995e-05</att>
+            <att name="colorBarMinimum" type="double">-1.75e-05</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>ORP</sourceName>
+        <destinationName>ORP</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">221.2</att>
+            <att name="colorBarMinimum" type="double">94.6</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>OST_62</sourceName>
+        <destinationName>OST_62</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">153.0</att>
+            <att name="colorBarMinimum" type="double">47.7</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>S_40</sourceName>
+        <destinationName>S_40</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">31.6</att>
+            <att name="colorBarMinimum" type="double">29.74</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>SpC_48</sourceName>
+        <destinationName>SpC_48</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">4.840999999999999</att>
+            <att name="colorBarMinimum" type="double">4.598</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>T_28</sourceName>
+        <destinationName>T_28</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">27.870000000000005</att>
+            <att name="colorBarMinimum" type="double">22.25</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>Turb</sourceName>
+        <destinationName>Turb</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">50.1</att>
+            <att name="colorBarMinimum" type="double">5.4</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+    <dataVariable>
+        <sourceName>pH_159</sourceName>
+        <destinationName>pH_159</destinationName>
+        <dataType>double</dataType>
+        <addAttributes>
+             
+            <att name="colorBarMaximum" type="double">8.23</att>
+            <att name="colorBarMinimum" type="double">7.76</att>
+            
+            <att name="ioos_category">Unknown</att>
+            
+        </addAttributes>
+    </dataVariable>
+    
+</dataset>

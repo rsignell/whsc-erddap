@@ -1,0 +1,164 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="PSB_ts_data" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-P9RK8H7X/</fileDir>
+    <fileNameRegex>PSB_ts_data.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+        <att name="Conventions">CF-1.7</att>
+        <att name="history">Generated using xarray 0.15.1</att>
+        <att name="institution">U.S. Geological Survey</att>
+        <att name="latitude" type="double">48.205941</att>
+        <att name="longitude" type="double">-122.371387</att>
+        <att name="title">Oceanographic measurements measured by bottom-mounted sensors in Port Susan, Washington, USA from March 2014 to July 2015</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">Other</att>
+        <att name="Conventions">CF-1.7, COARDS, ACDD-1.3</att>
+        <att name="creator_name">U.S. Geological Survey</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="infoUrl">https://www.usgs.gov/</att>
+        <att name="keywords">above, area, biology, bottom, bottom-mounted, breach, circulation, currents, data, datum, density, earth, Earth Science &gt; Oceans &gt; Ocean Circulation &gt; Ocean Currents, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, Earth Science &gt; Oceans &gt; Sea Surface Topography &gt; Sea Surface Height, ebb, flow, geological, geopotential, height, indexvel, into, into/out, level, measured, measurements, mounted, ocean, oceanographic, oceans, out, port, positive, practical, restoration, salinity, science, sea, sea level, sea_surface_height, sea_surface_height_above_geopotential_datum, sea_water_practical_salinity, sea_water_temperature, sea_water_turbidity, sea_water_x_velocity, seawater, sensors, stage, surface, survey, susan, temperature, time, topography, turbidity, US, usa, velocity, washington, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="summary">Oceanographic measurements measured by bottom-mounted sensors in Port Susan, Washington, USA from March 2014 to July 2015</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">T</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time</att>
+            <att name="units">minutes since 2014-03-21 20:45:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="int">2147483647</att>
+            <att name="ioos_category">Time</att>
+            <att name="standard_name">time</att>
+            <att name="units">minutes since 2014-03-21T20:45:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>wl</sourceName>
+        <destinationName>wl</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="datum">NAVD88</att>
+            <att name="standard_name">sea_surface_height_above_geopotential_datum</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">-2.0</att>
+            <att name="ioos_category">Sea Level</att>
+            <att name="long_name">Sea Surface Height Above Geopotential Datum</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>salinity</sourceName>
+        <destinationName>salinity</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="standard_name">sea_water_salinity</att>
+            <att name="units">1e-3</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">37.0</att>
+            <att name="colorBarMinimum" type="double">32.0</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">Sea Water Practical Salinity</att>
+            <att name="missing_value" type="double">NaN</att>
+            <att name="standard_name">sea_water_practical_salinity</att>
+            <att name="units">PSU</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>temperature</sourceName>
+        <destinationName>temperature</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="note">Data &gt; 40 C removed. Data from 2014-10-16 to 2014-11-22 removed. Data from 2015-01-30 22:30 to 2015-01-31 12:00 removed. </att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="units">degree_C</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Water Temperature</att>
+            <att name="missing_value" type="double">NaN</att>
+            <att name="note">Data &gt; 40 C removed. Data from 2014-10-16 to 2014-11-22 removed. Data from 2015-01-30 22:30 to 2015-01-31 12:00 removed.</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>turbidity</sourceName>
+        <destinationName>turbidity</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="note">Data less than 0.5 removed. Data with a point-to-point increase of greater than 800 removed. Data with a point-to-point decrease of less than -800 removed. Data from 2014-06-22 12:30 to 2014-07-25 21:00 removed. Data from 2014-08-06 00:00 to 2014-09-17 19:30 removed. Data from 2014-09-22 00:00 to 2014-10-11 00:00 removed. Data from 2014-06-10 13:00 to 2014-06-10 22:45 removed. Data from 2014-06-11 13:30 to 2014-06-11 23:15 removed. Data from 2014-06-12 14:15 to 2014-06-12 23:30 removed. Data from 2014-06-13 15:15 to 2014-06-14 00:15 removed. Data from 2014-06-14 16:00 to 2014-06-15 00:45 removed. Data from 2015-04-25 00:15 to 2015-04-25 04:30 removed. Data from 2015-06-27 07:45 to 2015-06-27 08:30 removed. Data from 2015-06-28 08:00 to 2015-06-28 09:30 removed. Data at 2014-08-03 18:00 removed. Data at 2014-06-06 05:15 removed. Data at 2014-06-04 03:30 removed. Data at 2014-06-17 15:15 removed. Data at 2015-02-04 17:30 removed. </att>
+            <att name="standard_name">sea_water_turbidity</att>
+            <att name="units">NTU</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">Sea Water Turbidity</att>
+            <att name="missing_value" type="double">NaN</att>
+            <att name="note">Data less than 0.5 removed. Data with a point-to-point increase of greater than 800 removed. Data with a point-to-point decrease of less than -800 removed. Data from 2014-06-22 12:30 to 2014-07-25 21:00 removed. Data from 2014-08-06 00:00 to 2014-09-17 19:30 removed. Data from 2014-09-22 00:00 to 2014-10-11 00:00 removed. Data from 2014-06-10 13:00 to 2014-06-10 22:45 removed. Data from 2014-06-11 13:30 to 2014-06-11 23:15 removed. Data from 2014-06-12 14:15 to 2014-06-12 23:30 removed. Data from 2014-06-13 15:15 to 2014-06-14 00:15 removed. Data from 2014-06-14 16:00 to 2014-06-15 00:45 removed. Data from 2015-04-25 00:15 to 2015-04-25 04:30 removed. Data from 2015-06-27 07:45 to 2015-06-27 08:30 removed. Data from 2015-06-28 08:00 to 2015-06-28 09:30 removed. Data at 2014-08-03 18:00 removed. Data at 2014-06-06 05:15 removed. Data at 2014-06-04 03:30 removed. Data at 2014-06-17 15:15 removed. Data at 2015-02-04 17:30 removed.</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>stage</sourceName>
+        <destinationName>stage</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="standard_name">sea_surface_height</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">2.0</att>
+            <att name="colorBarMinimum" type="double">-2.0</att>
+            <att name="ioos_category">Biology</att>
+            <att name="long_name">Sea Surface Height</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>indexvel</sourceName>
+        <destinationName>indexvel</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="long_name">breach flow velocity into/out of restoration area; positive ebb</att>
+            <att name="note">Data from 2014-07-11 15:15 to 2014-07-11 22:15 removed. Data from 2014-07-12 15:45 to 2014-07-12 23:00 removed. Data from 2014-07-13 16:45 to 2014-07-13 23:45 removed. Data from 2014-08-07 06:30 to 2014-08-09 23:15 removed. Data from 2014-09-06 12:15 to 2014-09-06 21:15 removed. Data from 2015-01-20 11:00 to 2015-01-23 05:45 removed. </att>
+            <att name="standard_name">sea_water_x_velocity</att>
+            <att name="units">m s-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="ioos_category">Currents</att>
+            <att name="missing_value" type="double">NaN</att>
+            <att name="note">Data from 2014-07-11 15:15 to 2014-07-11 22:15 removed. Data from 2014-07-12 15:45 to 2014-07-12 23:00 removed. Data from 2014-07-13 16:45 to 2014-07-13 23:45 removed. Data from 2014-08-07 06:30 to 2014-08-09 23:15 removed. Data from 2014-09-06 12:15 to 2014-09-06 21:15 removed. Data from 2015-01-20 11:00 to 2015-01-23 05:45 removed.</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

@@ -1,0 +1,415 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="Gulf-of-Mexico-C12-OCSv3-Data-10252018-to-01292020">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-P91T185R/</fileDir>
+    <fileNameRegex>Gulf-of-Mexico-C12-OCSv3-Data-10252018-to-01292020.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="datasetID">Gulf-of-Mexico-C12-OCSv3-Data-10252018-to-01292020</att>
+        <att name="date_created">2020-08-13T19:52:39.650269+00:00</att>
+        <att name="experiment_id">EGOMCOMPS</att>
+        <att name="featureType">timeSeries</att>
+        <att name="geospatial_lat_max" type="double">27.49953</att>
+        <att name="geospatial_lat_min" type="double">27.49953</att>
+        <att name="geospatial_lon_max" type="double">-83.74239</att>
+        <att name="geospatial_lon_min" type="double">-83.74239</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_P91T185R.ipynb; </att>
+        <att name="id">Gulf-of-Mexico-C12-OCSv3-Data-10252018-to-01292020</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="metadata_link">https://doi.org/10.5066/P91T185R</att>
+        <att name="MOORING">C12</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="summary">This data set contains time series measurements of carbonate system parameters including water temperature (&#xb0;C), pressure (dbars), salinity, pHT (pH on the total scale), carbon dioxide (ppm), dissolved oxygen (milligrams/L), and photosynthetically active radiation (microEinsteins). These data were collected in the eastern Gulf of Mexico near Tampa Bay, Florida, at the University of South Florida Coastal Ocean and Monitoring Prediction System (COMPS) Buoy C12 by the U.S. Geological Survey (USGS) St. Petersburg Coastal and Marine Science Center using an autonomous instrument package called the Ocean Carbon System version 3 (OCSv3). The OCSv3 consists of four sensors integrated using a Sea-Bird Stor-X data logger including a Sea-Bird SeapHOx pH sensor, a Sea-Bird SBE 37-SMP-ODO MicroCAT C-T-ODO (P) Recorder, a Pro-Oceanus CO2-Pro CV sensor, and a Wetlabs Eco-PAR sensor. Each parameter was measured hourly over multiple twenty-four hour time periods, ranging from weeks to months.</att>
+        <att name="time_coverage_duration">P460DT23H0M0S</att>
+        <att name="time_coverage_end">2020-01-29T11:30:00</att>
+        <att name="time_coverage_resolution">P0DT1H0M0S</att>
+        <att name="time_coverage_start">2018-10-25T12:30:00</att>
+        <att name="title">Time series of carbonate system parameters in Eastern Gulf of Mexico near Tampa Bay, Florida, USA - Gulf-of-Mexico-C12-OCSv3-Data-10252018-to-01292020</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2020-08-13T19:52:39.650Z</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_P91T185R.ipynb;</att>
+        <att name="infoUrl">https://doi.org/10.5066/P91T185R</att>
+        <att name="keywords">analyzer, available, bay, c12, carbon, carbon dioxide, carbonate, chamber, chemistry, co2, CO2ppm, co3, coastal, concentration, data, density, dioxide, dissolved, dissolved o2, earth, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; Oxygen, Earth Science &gt; Oceans &gt; Ocean Chemistry &gt; pH, Earth Science &gt; Oceans &gt; Ocean Pressure &gt; Water Pressure, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, eastern, egmex, feature, feature_type_instance, florida, gas, geological, geology, gom, gulf, gulf of mexico, gulf-of-mexico-c12-ocsv3-data-10252018-to-01292020, identifier, indicates, infrared, instance, latitude, longitude, marine, mass, mass_concentration_of_oxygen_in_sea_water, measurement, mexico, million, near, numeric, O2, ocean, oceanography, oceans, ocsv3, optical, optical properties, oxygen, OXYGEN_mg_L, par, PAR_microEinsteins, parameters, parts, per, photosynthetically, pHT, practical, PRESIRGA_mbar, PRESS_dbar, pressure, program, properties, QF_CO2, QF_OXYGEN, QF_PAR, QF_pHT, QF_PRESIRGA, QF_PRESS, QF_SALINITY, QF_TW, quality, radiation, reported, salinity, sampling, scale, science, sea, sea_water_ph_reported_on_total_scale, sea_water_practical_salinity, sea_water_pressure, sea_water_temperature, seawater, sediment transport, sensor, series, south, states, survey, system, tampa, temperature, time, time series, total, TW_C, type, united, university, usa, usf, usgs, value, volume, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="subsetVariables">longitude, latitude, feature_type_instance</att>
+        <att name="summary">Time series of carbonate system parameters in Eastern Gulf of Mexico near Tampa Bay, Florida, USA - Gulf-of-Mexico-C12-OCSv3-Data-10252018-to-01292020. This data set contains time series measurements of carbonate system parameters including water temperature (&#xb0;C), pressure (dbars), salinity, pHT (pH on the total scale), carbon dioxide (ppm), dissolved oxygen (milligrams/L), and photosynthetically active radiation (microEinsteins). These data were collected in the eastern Gulf of Mexico near Tampa Bay, Florida, at the University of South Florida Coastal Ocean and Monitoring Prediction System (COMPS) Buoy C12 by the U.S. Geological Survey (United States Geological Survey (USGS)) St. Petersburg Coastal and Marine Science Center using an autonomous instrument package called the Ocean Carbon System version 3 (OCSv3). The OCSv3 consists of four sensors integrated using a Sea-Bird Stor-X data logger including a Sea-Bird SeapHOx pH sensor, a Sea-Bird SBE 37-SMP-ODO MicroCAT C-T-ODO (P) Recorder, a Pro-Oceanus CO2-Pro CV sensor, and a Wetlabs Eco-Photosynthetically Available Radiation (PAR) sensor. Each parameter was measured hourly over multiple twenty-four hour time periods, ranging from weeks to months.</att>
+        <att name="time_coverage_end">2020-01-29T11:30:00Z</att>
+        <att name="time_coverage_start">2018-10-25T12:30:00Z</att>
+        <att name="title">Time series of carbonate system parameters in Eastern Gulf of Mexico near Tampa Bay, Florida, USA, Gulf-of-Mexico-C12-OCSv3-Data-10252018-to-01292020</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">T</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">hours since 2018-10-25 12:30:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="units">hours since 2018-10-25T12:30:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>TW_C</sourceName>
+        <destinationName>TW_C</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="units">degree_C</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">Sea Water Temperature</att>
+            <att name="missing_value" type="double">NaN</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>QF_TW</sourceName>
+        <destinationName>QF_TW</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+            <att name="comment">Flag 1 = QC has been performed and element appears to be correct, Flag 2 = QC has been performed and element appears to be probably good with other elements, Flag 3 = QC has been performed and element appears to be probably bad, Flag 4 = QC has been performed and element appears to be bad, Flag 5 = the value has been modified as a result of QC, Flag 9 = The value of the element is missing.</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">A numeric value that indicates the quality of the reported data</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>PRESS_dbar</sourceName>
+        <destinationName>PRESS_dbar</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="standard_name">sea_water_pressure</att>
+            <att name="units">dbar</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">5000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">Sea Water Pressure</att>
+            <att name="missing_value" type="double">NaN</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>QF_PRESS</sourceName>
+        <destinationName>QF_PRESS</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+            <att name="comment">Flag 1 = QC has been performed and element appears to be correct, Flag 2 = QC has been performed and element appears to be probably good with other elements, Flag 3 = QC has been performed and element appears to be probably bad, Flag 4 = QC has been performed and element appears to be bad, Flag 5 = the value has been modified as a result of QC, Flag 9 = The value of the element is missing.</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">A numeric value that indicates the quality of the reported data</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>SALINITY</sourceName>
+        <destinationName>SALINITY</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="standard_name">sea_water_salinity</att>
+            <att name="units">PSU</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">37.0</att>
+            <att name="colorBarMinimum" type="double">32.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">Sea Water Practical Salinity</att>
+            <att name="missing_value" type="double">NaN</att>
+            <att name="standard_name">sea_water_practical_salinity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>QF_SALINITY</sourceName>
+        <destinationName>QF_SALINITY</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+            <att name="comment">Flag 1 = QC has been performed and element appears to be correct, Flag 2 = QC has been performed and element appears to be probably good with other elements, Flag 3 = QC has been performed and element appears to be probably bad, Flag 4 = QC has been performed and element appears to be bad, Flag 5 = the value has been modified as a result of QC, Flag 9 = The value of the element is missing.</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">A numeric value that indicates the quality of the reported data</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>pHT</sourceName>
+        <destinationName>pHT</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="standard_name">sea_water_ph_reported_on_total_scale</att>
+            <att name="units">1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">9.0</att>
+            <att name="colorBarMinimum" type="double">7.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">Sea Water Ph Reported On Total Scale</att>
+            <att name="missing_value" type="double">NaN</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>QF_pHT</sourceName>
+        <destinationName>QF_pHT</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+            <att name="comment">Flag 1 = QC has been performed and element appears to be correct, Flag 2 = QC has been performed and element appears to be probably good with other elements, Flag 3 = QC has been performed and element appears to be probably bad, Flag 4 = QC has been performed and element appears to be bad, Flag 5 = the value has been modified as a result of QC, Flag 9 = The value of the element is missing.</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">A numeric value that indicates the quality of the reported data</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>CO2ppm</sourceName>
+        <destinationName>CO2ppm</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">concentration of CO2 in parts per million by volume.</att>
+            <att name="units">ppm</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">CO2</att>
+            <att name="missing_value" type="double">NaN</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>QF_CO2</sourceName>
+        <destinationName>QF_CO2</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="comment">Flag 1 = QC has been performed and element appears to be correct, Flag 2 = QC has been performed and element appears to be probably good with other elements, Flag 3 = QC has been performed and element appears to be probably bad, Flag 4 = QC has been performed and element appears to be bad, Flag 5 = the value has been modified as a result of QC, Flag 9 = The value of the element is missing.</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">A numeric value that indicates the quality of the reported data</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>PRESIRGA_mbar</sourceName>
+        <destinationName>PRESIRGA_mbar</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">pressure in the sampling chamber of the infrared gas analyzer of the CO2 sensor</att>
+            <att name="units">mbar</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">CO2</att>
+            <att name="missing_value" type="double">NaN</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>QF_PRESIRGA</sourceName>
+        <destinationName>QF_PRESIRGA</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+            <att name="comment">Flag 1 = QC has been performed and element appears to be correct, Flag 2 = QC has been performed and element appears to be probably good with other elements, Flag 3 = QC has been performed and element appears to be probably bad, Flag 4 = QC has been performed and element appears to be bad, Flag 5 = the value has been modified as a result of QC, Flag 9 = The value of the element is missing.</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">A numeric value that indicates the quality of the reported data</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>OXYGEN_mg_L</sourceName>
+        <destinationName>OXYGEN_mg_L</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="standard_name">mass_concentration_of_oxygen_in_sea_water</att>
+            <att name="units">mg L-1</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">500.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Dissolved O2</att>
+            <att name="long_name">Mass Concentration Of Oxygen In Sea Water</att>
+            <att name="missing_value" type="double">NaN</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>QF_OXYGEN</sourceName>
+        <destinationName>QF_OXYGEN</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="comment">Flag 1 = QC has been performed and element appears to be correct, Flag 2 = QC has been performed and element appears to be probably good with other elements, Flag 3 = QC has been performed and element appears to be probably bad, Flag 4 = QC has been performed and element appears to be bad, Flag 5 = the value has been modified as a result of QC, Flag 9 = The value of the element is missing.</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">A numeric value that indicates the quality of the reported data</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>PAR_microEinsteins</sourceName>
+        <destinationName>PAR_microEinsteins</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">concentration of photosynthetically available radiation</att>
+            <att name="units">microEinsteins</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Optical Properties</att>
+            <att name="missing_value" type="double">NaN</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>QF_PAR</sourceName>
+        <destinationName>QF_PAR</destinationName>
+        <dataType>long</dataType>
+        <!-- sourceAttributes>
+            <att name="comment">Flag 1 = QC has been performed and element appears to be correct, Flag 2 = QC has been performed and element appears to be probably good with other elements, Flag 3 = QC has been performed and element appears to be probably bad, Flag 4 = QC has been performed and element appears to be bad, Flag 5 = the value has been modified as a result of QC, Flag 9 = The value of the element is missing.</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="long_name">A numeric value that indicates the quality of the reported data</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">150.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Quality</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

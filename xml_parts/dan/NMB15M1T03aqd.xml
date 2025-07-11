@@ -1,0 +1,660 @@
+<!--
+ DISCLAIMER:
+   The chunk of datasets.xml made by GenerageDatasetsXml isn't perfect.
+   YOU MUST READ AND EDIT THE XML BEFORE USING IT IN A PUBLIC ERDDAP.
+   GenerateDatasetsXml relies on a lot of rules-of-thumb which aren't always
+   correct.  *YOU* ARE RESPONSIBLE FOR ENSURING THE CORRECTNESS OF THE XML
+   THAT YOU ADD TO ERDDAP'S datasets.xml FILE.
+
+ DIRECTIONS:
+ * Read about this type of dataset in
+   https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html .
+ * Read https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#addAttributes
+   so that you understand about sourceAttributes and addAttributes.
+ * Note: Global sourceAttributes and variable sourceAttributes are listed
+   below as comments, for informational purposes only.
+   ERDDAP combines sourceAttributes and addAttributes (which have
+   precedence) to make the combinedAttributes that are shown to the user.
+   (And other attributes are automatically added to longitude, latitude,
+   altitude, depth, and time variables).
+ * If you don't like a sourceAttribute, overwrite it by adding an
+   addAttribute with the same name but a different value
+   (or no value, if you want to remove it).
+ * All of the addAttributes are computer-generated suggestions. Edit them!
+   If you don't like an addAttribute, change it.
+ * If you want to add other addAttributes, add them.
+ * If you want to change a destinationName, change it.
+   But don't change sourceNames.
+ * You can change the order of the dataVariables or remove any of them.
+-->
+
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="NMB15M1T03aqd" active="true">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-F71C1W36/</fileDir>
+    <fileNameRegex>NMB15M1T03aqd.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <preExtractRegex></preExtractRegex>
+    <postExtractRegex></postExtractRegex>
+    <extractRegex></extractRegex>
+    <columnNameForExtract></columnNameForExtract>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="amplitude_cutoff" type="double">0.0</att>
+        <att name="AnalogInput1_initial_sensor_height" type="double">0.25</att>
+        <att name="AnalogInput1_nominal_sensor_depth" type="double">1.13</att>
+        <att name="AnalogInput1_sensor_manufacturer">Seapoint</att>
+        <att name="AnalogInput1_sensor_model">OBS3</att>
+        <att name="AnalogInput1_sensor_type">OBS</att>
+        <att name="AnalogInput1_serial_number">9999</att>
+        <att name="AQDOrientation">1</att>
+        <att name="baseFileName">NMB15A01</att>
+        <att name="beam_angle" type="double">25.0</att>
+        <att name="beam_pattern">convex</att>
+        <att name="beam_width" type="double">1.7</att>
+        <att name="bin_count" type="double">12.0</att>
+        <att name="bin_size" type="double">0.05</att>
+        <att name="blanking_distance" type="double">0.104</att>
+        <att name="burstlength" type="double">512.0</att>
+        <att name="cdm_profile_variables">profile_index</att>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="center_first_bin" type="double">0.154</att>
+        <att name="ClockError" type="double">0.0</att>
+        <att name="COMPOSITE" type="double">0.0</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHICAL</att>
+        <att name="coordinate_system">XYZ</att>
+        <att name="CREATION_DATE">14-Nov-2016 10:12:32</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="CruiseID">Northern Monterey Bay</att>
+        <att name="DATA_ORIGIN">USGS WCMG Sed Trans Group</att>
+        <att name="DATA_TYPE">TIME</att>
+        <att name="datasetID">NMB15M1T03aqd</att>
+        <att name="date_created">2016-11-14T10:12:32</att>
+        <att name="Deployment_date">12-Nov-2015 16:01:45</att>
+        <att name="DEPTH_CONST" type="double">0.0</att>
+        <att name="DESCRIPT">unknown</att>
+        <att name="DESCRIPTION">Tate Tripod</att>
+        <att name="DRIFTER" type="double">0.0</att>
+        <att name="EXPERIMENT">North Monterey Bay 2015</att>
+        <att name="experiment_id">NMB15</att>
+        <att name="featureType">timeSeriesProfile</att>
+        <att name="filename">NMB15M1T03aqdHR</att>
+        <att name="FILL_FLAG" type="double">1.0E35</att>
+        <att name="frequency" type="double">2000.0</att>
+        <att name="geospatial_lat_max" type="double">36.948444</att>
+        <att name="geospatial_lat_min" type="double">36.948444</att>
+        <att name="geospatial_lon_max" type="double">-122.010361</att>
+        <att name="geospatial_lon_min" type="double">-122.010361</att>
+        <att name="good_bursts" type="doubleList">1.0 3686.0</att>
+        <att name="head_rotation">horizontal</att>
+        <att name="id">NMB15M1T03aqd</att>
+        <att name="initial_instrument_height" type="double">0.62</att>
+        <att name="initial_instrument_height_note">from mooring log</att>
+        <att name="inst_number">unknown</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="instmeta_AQDAnalogInput1">STANDARD</att>
+        <att name="instmeta_AQDAnalogInput2">NONE</att>
+        <att name="instmeta_AQDAnalogPowerOutput">12V</att>
+        <att name="instmeta_AQDAverageInterval" type="double">1.0</att>
+        <att name="instmeta_AQDBeamAngle" type="double">25.0</att>
+        <att name="instmeta_AQDBeamPattern">convex</att>
+        <att name="instmeta_AQDBeamWidth" type="double">1.7</att>
+        <att name="instmeta_AQDBlankingDistance" type="double">0.104</att>
+        <att name="instmeta_AQDBurstSampling">ON</att>
+        <att name="instmeta_AQDCellSize" type="double">50.0</att>
+        <att name="instmeta_AQDComments">AquadoppHR 5587 with Seapoint OBS at 25cmab</att>
+        <att name="instmeta_AQDCompass">205 78 6</att>
+        <att name="instmeta_AQDCompassUpdateRate" type="double">1.0</att>
+        <att name="instmeta_AQDCoordinateSystem">XYZ</att>
+        <att name="instmeta_AQDDeploymentName">NMB15A</att>
+        <att name="instmeta_AQDDeploymentTime">11/13/2015</att>
+        <att name="instmeta_AQDDistanceToBottom" type="double">0.7</att>
+        <att name="instmeta_AQDExtendedVelocityRange">ON</att>
+        <att name="instmeta_AQDFirmwareVersion">3.18 HR</att>
+        <att name="instmeta_AQDFrequency" type="double">2000.0</att>
+        <att name="instmeta_AQDHeadRotation">horizontal</att>
+        <att name="instmeta_AQDHeadSerialNumber">ASP 5587</att>
+        <att name="instmeta_AQDHorizontalVelocityRange" type="double">1.15</att>
+        <att name="instmeta_AQDMeasurementBurstinterval" type="double">3600.0</att>
+        <att name="instmeta_AQDMeasurementLoad" type="double">47.0</att>
+        <att name="instmeta_AQDNumBeams" type="double">3.0</att>
+        <att name="instmeta_AQDNumberOfBeams" type="double">3.0</att>
+        <att name="instmeta_AQDNumberOfCells" type="double">12.0</att>
+        <att name="instmeta_AQDNumberOfPingsPerBurst" type="double">19.0</att>
+        <att name="instmeta_AQDOrientation">DOWNLOOKING</att>
+        <att name="instmeta_AQDPowerLevelfirstping">HIGH-</att>
+        <att name="instmeta_AQDPowerLevelPing2">HIGH</att>
+        <att name="instmeta_AQDPowerOutput">ENABLED</att>
+        <att name="instmeta_AQDPressRange" type="doubleList">0.0 100.0</att>
+        <att name="instmeta_AQDPressureCal" type="doubleList">0.0 0.0 4187.0 16620.0</att>
+        <att name="instmeta_AQDPressuresensor">YES</att>
+        <att name="instmeta_AQDProfileRange" type="double">0.6</att>
+        <att name="instmeta_AQDPulseDistanceLag1" type="double">0.8</att>
+        <att name="instmeta_AQDPulseDistanceLag2" type="double">0.26</att>
+        <att name="instmeta_AQDRecorderSize">361 MByte</att>
+        <att name="instmeta_AQDSalinity">35.0 ppt</att>
+        <att name="instmeta_AQDSamplesPerBurst" type="double">512.0</att>
+        <att name="instmeta_AQDSamplingrate" type="double">1.0</att>
+        <att name="instmeta_AQDSerial_Number">AQD 8540</att>
+        <att name="instmeta_AQDSoundSpeed">MEASURED</att>
+        <att name="instmeta_AQDSyncOutDelay">0 sec</att>
+        <att name="instmeta_AQDSyncPowerDelay">0 sec</att>
+        <att name="instmeta_AQDTempRange" type="doubleList">-4.0 40.0</att>
+        <att name="instmeta_AQDTilt">YES</att>
+        <att name="instmeta_AQDTransMatrix" type="doubleList">1.5774 0.0 0.3677 -0.7891 -1.3662 0.3677 -0.7891 1.3662 0.3677</att>
+        <att name="instmeta_AQDVelocityRange">NORMAL</att>
+        <att name="instmeta_AQDVelRange" type="double">1000.0</att>
+        <att name="instmeta_AQDVerticalVelocityRange" type="double">0.48</att>
+        <att name="instmeta_AQDWrapmode">OFF</att>
+        <att name="instnum">03</att>
+        <att name="instrument_number">NMB15M1T03</att>
+        <att name="latitude" type="double">NaN</att>
+        <att name="LatLonDatum">NAD83</att>
+        <att name="longitude" type="double">NaN</att>
+        <att name="magnetic_variation_applied" type="double">13.5</att>
+        <att name="magnetic_variation_at_site" type="double">13.5</att>
+        <att name="metadata_link">https://doi.org/10.5066/F71C1W36</att>
+        <att name="metadatafile_author">Kurt Rosenberger, USGS MP</att>
+        <att name="metadatafile_name">runNMB15M1T_AQDHR.m</att>
+        <att name="MOORING">NMB15M1T</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="nbursts" type="double">3686.0</att>
+        <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+        <att name="nominal_instrument_depth_note">WATER_DEPTH-initial_instrument_height</att>
+        <att name="orientation">DOWN</att>
+        <att name="platform_type">Tripod</att>
+        <att name="POS_CONST" type="double">0.0</att>
+        <att name="pred_accuracy" type="double">0.0</att>
+        <att name="PROGRAM">Northern Monterey Bay</att>
+        <att name="PROJECT">Northern Monterey Bay</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="Recovery_date">06-Jun-2016 17:01</att>
+        <att name="Region">Northern Monterey Bay</att>
+        <att name="salinity_set_by_user">35.0 ppt</att>
+        <att name="salinity_set_by_user_units">ppt</att>
+        <att name="SamplesPerBurst" type="double">512.0</att>
+        <att name="SciPi">Northern Monterey Bay</att>
+        <att name="serial_number">ASP 5587</att>
+        <att name="Site">M1T</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="time_coverage_duration">P153DT12H0M0S</att>
+        <att name="time_coverage_end">2016-04-14T13:00:00</att>
+        <att name="time_coverage_resolution">P0DT1H0M0S</att>
+        <att name="time_coverage_start">2015-11-13T01:00:00</att>
+        <att name="title">Time-Series data on currents, waves and sediment transport off Santa Cruz, CA, 2014-2015: Site M1T</att>
+        <att name="transducer_offset_from_bottom" type="double">0.62</att>
+        <att name="WATER_DEPTH" type="double">15.703552675149076</att>
+        <att name="WATER_DEPTH_datum">MSL</att>
+        <att name="WATER_DEPTH_note">downlooking bin depths = water_depth - transducer_offset_from_bottom + bindist</att>
+        <att name="WATER_DEPTH_SOURCE">Ships Echosounder</att>
+        <att name="WATER_DEPTH_source">water depth = MSL from pressure sensor</att>
+        <att name="WATER_MASS">?</att>
+        <att name="Year" type="double">2015.0</att>
+        <att name="zeroed_pressure">Yes</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station, longitude, latitude</att>
+        <att name="subsetVariables">station, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeriesProfile</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="CREATION_DATE">null</att>
+        <att name="creation_date">14-Nov-2016 10:12:32</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2016-11-14T10:12:32Z</att>
+        <att name="history">USGS</att>
+        <att name="infoUrl">https://doi.org/10.5066/F71C1W36</att>
+        <att name="instmeta_AQDAnalogInput2">null</att>
+        <att name="keywords">2014-2015, angle, average, burst, circulation, coastal, cruz, currents, data, depth, due, earth, Earth Science &gt; Oceans &gt; Ocean Circulation &gt; Ocean Currents, eastward, eastward_sea_water_velocity, feature, feature_type_instance, geological, geology, Hdg_1215, heading, identifier, index, inst, instance, latitude, longitude, m1t, marine, mean, measurement, nephelometric, northward, northward_sea_water_velocity, ntu, ocean, oceans, off, orientation, P_4023, pitch, platform, platform_orientation, platform_pitch_angle, platform_roll_angle, pressure, profile, profile_index, program, Ptch_1216, roll, Roll_1217, santa, science, sea, sea_water_pressure_due_to_sea_water, sea_water_turbidity, seawater, sediment, sensor, series, site, states, survey, time, time-series, transport, Trb1_980, turbidity, type, u_1205, united, units, upward, upward_sea_water_velocity, usgs, v_1206, velocity, vertical, w_1204, water, waves</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="latitude">null</att>
+        <att name="license">[standard]</att>
+        <att name="longitude">null</att>
+        <att name="PROGRAM">null</att>
+        <att name="program">Northern Monterey Bay</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="subsetVariables">latitude, longitude, feature_type_instance, depth</att>
+        <att name="summary">Time-Series data on currents, waves and sediment transport off Santa Cruz, CA, 2014-2015: Site M1T</att>
+        <att name="time_coverage_end">2016-04-14T13:00:00Z</att>
+        <att name="time_coverage_start">2015-11-13T01:00:00Z</att>
+        <att name="WATER_MASS">null</att>
+        <att name="Year">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1024</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">hours since 2015-11-13 01:00:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="units">hours since 2015-11-13T01:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="epic_code" type="double">500.0</att>
+            <att name="FORTRAN_format">F10.4</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="maximum" type="double">1.0E35</att>
+            <att name="minimum" type="double">1.0E35</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degree_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="data_max" type="double">1.0E35</att>
+            <att name="data_min" type="double">1.0E35</att>
+            <att name="ioos_category">Location</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+            <att name="units">degrees_north</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="epic_code" type="double">502.0</att>
+            <att name="FORTRAN_format">F10.4</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="maximum" type="double">1.0E35</att>
+            <att name="minimum" type="double">1.0E35</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degree_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="data_max" type="double">1.0E35</att>
+            <att name="data_min" type="double">1.0E35</att>
+            <att name="ioos_category">Location</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+            <att name="units">degrees_east</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>z</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="epic_code" type="double">3.0</att>
+            <att name="initial_sensor_height" type="double">0.62</att>
+            <att name="long_name">mean water depth</att>
+            <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+            <att name="positive">down</att>
+            <att name="standard_name">height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>u_1205</sourceName>
+        <destinationName>u_1205</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 12</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="epic_code" type="double">1205.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="generic_name">u</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="double">0.62</att>
+            <att name="long_name">Eastward Velocity</att>
+            <att name="maximum" type="double">19.229542020347704</att>
+            <att name="minimum" type="double">-12.122823397252327</att>
+            <att name="name">u</att>
+            <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+            <att name="sensor_type">Nortek Aquadopp Profiler</att>
+            <att name="serial_number">ASP 5587</att>
+            <att name="standard_name">eastward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">19.229542020347704</att>
+            <att name="data_min" type="double">-12.122823397252327</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>v_1206</sourceName>
+        <destinationName>v_1206</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 12</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="epic_code" type="double">1206.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="generic_name">v</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="double">0.62</att>
+            <att name="long_name">Northward Velocity</att>
+            <att name="maximum" type="double">13.024461174906374</att>
+            <att name="minimum" type="double">-10.677040611960257</att>
+            <att name="name">v</att>
+            <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+            <att name="sensor_type">Nortek Aquadopp Profiler</att>
+            <att name="serial_number">ASP 5587</att>
+            <att name="standard_name">northward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">13.024461174906374</att>
+            <att name="data_min" type="double">-10.677040611960257</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>w_1204</sourceName>
+        <destinationName>w_1204</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="intList">1 12</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="epic_code" type="double">1204.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="generic_name">w</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="double">0.62</att>
+            <att name="long_name">Vertical Velocity</att>
+            <att name="maximum" type="double">2.766252784039931</att>
+            <att name="minimum" type="double">-7.975888878983892</att>
+            <att name="name">w</att>
+            <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+            <att name="sensor_type">Nortek Aquadopp Profiler</att>
+            <att name="serial_number">ASP 5587</att>
+            <att name="standard_name">upward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">2.766252784039931</att>
+            <att name="data_min" type="double">-7.975888878983892</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>P_4023</sourceName>
+        <destinationName>P_4023</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">461</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="epic_code" type="double">4023.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="FORTRAN_format">F10.1</att>
+            <att name="generic_name">depth</att>
+            <att name="initial_sensor_height" type="double">0.62</att>
+            <att name="long_name">AVERAGE BURST PRESSURE   </att>
+            <att name="maximum" type="double">16.221904296875</att>
+            <att name="minimum" type="double">13.844414062499991</att>
+            <att name="name">P</att>
+            <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+            <att name="serial_number">ASP 5587</att>
+            <att name="standard_name">sea_water_pressure_due_to_sea_water</att>
+            <att name="type">EVEN</att>
+            <att name="units">dbar</att>
+            <att name="valid_range" type="doubleList">0.0 10000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">15000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">16.221904296875</att>
+            <att name="data_min" type="double">13.844414062499991</att>
+            <att name="ioos_category">Pressure</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Hdg_1215</sourceName>
+        <destinationName>Hdg_1215</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">461</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="epic_code" type="double">1215.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="generic_name">hdg</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="double">0.62</att>
+            <att name="long_name">INST Heading             </att>
+            <att name="maximum" type="double">205.96601562499984</att>
+            <att name="minimum" type="double">204.5914062500006</att>
+            <att name="name">Hdg</att>
+            <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+            <att name="sensor_type">Nortek Aquadopp Profiler</att>
+            <att name="serial_number">ASP 5587</att>
+            <att name="standard_name">platform_orientation</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="doubleList">0.0 360.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">400.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">205.96601562499984</att>
+            <att name="data_min" type="double">204.5914062500006</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Ptch_1216</sourceName>
+        <destinationName>Ptch_1216</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">461</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="epic_code" type="double">1216.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="generic_name">ptch</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="double">0.62</att>
+            <att name="long_name">INST Pitch             </att>
+            <att name="maximum" type="double">-0.9357421874999934</att>
+            <att name="minimum" type="double">-2.299999999999978</att>
+            <att name="name">Ptch</att>
+            <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+            <att name="sensor_type">Nortek Aquadopp Profiler</att>
+            <att name="serial_number">ASP 5587</att>
+            <att name="standard_name">platform_pitch_angle</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="doubleList">-180.0 180.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">200.0</att>
+            <att name="colorBarMinimum" type="double">-200.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">-0.9357421874999934</att>
+            <att name="data_min" type="double">-2.299999999999978</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Roll_1217</sourceName>
+        <destinationName>Roll_1217</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">461</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="epic_code" type="double">1217.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="generic_name">roll</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="double">0.62</att>
+            <att name="long_name">INST Roll             </att>
+            <att name="maximum" type="double">1.700000000000014</att>
+            <att name="minimum" type="double">-0.09121093750000077</att>
+            <att name="name">Roll</att>
+            <att name="nominal_instrument_depth" type="double">15.083552675149077</att>
+            <att name="sensor_type">Nortek Aquadopp Profiler</att>
+            <att name="serial_number">ASP 5587</att>
+            <att name="standard_name">platform_roll_angle</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="doubleList">-180.0 180.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">200.0</att>
+            <att name="colorBarMinimum" type="double">-200.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">1.700000000000014</att>
+            <att name="data_min" type="double">-0.09121093750000077</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Trb1_980</sourceName>
+        <destinationName>Trb1_980</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">461</att>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="epic_code" type="double">980.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="initial_sensor_height" type="double">0.25</att>
+            <att name="long_name">TURBIDITY (NTU)</att>
+            <att name="maximum" type="double">957.761045505264</att>
+            <att name="minimum" type="double">1.515173189898531</att>
+            <att name="name">trb</att>
+            <att name="nominal_sensor_depth" type="double">15.453552675149076</att>
+            <att name="NTUcoef" type="doubleList">0.0 500.0</att>
+            <att name="sensor_manufacturer">Seapoint</att>
+            <att name="sensor_model">OBS3</att>
+            <att name="sensor_type">OBS</att>
+            <att name="serial_number">9999</att>
+            <att name="standard_name">sea_water_turbidity</att>
+            <att name="units">NTU</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">957.761045505264</att>
+            <att name="data_min" type="double">1.515173189898531</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">longitude latitude</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>profile_index</sourceName>
+        <destinationName>profile_index</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">922</att>
+            <att name="cf_role">profile_id</att>
+            <att name="coordinates">longitude latitude</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Profile Index</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>depth</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">longitude latitude</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Depth</att>
+            <att name="standard_name">depth</att>
+            <att name="units">m</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

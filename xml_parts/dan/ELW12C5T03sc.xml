@@ -1,0 +1,374 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="ELW12C5T03sc">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-F7CR5RW8/</fileDir>
+    <fileNameRegex>ELW12C5T03sc.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="clock_error" type="double">-50.0</att>
+        <att name="clock_error_units">Seconds</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHIC</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="CruiseID">T-R4-12-PS</att>
+        <att name="DATA_CMNT">Elwha River Deep Tripod C5T Seacat SBE-16plus</att>
+        <att name="DATA_ORIGIN">USGS PCMSC</att>
+        <att name="DATA_SUBTYPE">MOORED</att>
+        <att name="DATA_TYPE">TIME</att>
+        <att name="datasetID">ELW12C5T03sc</att>
+        <att name="date_created">2020-07-14T17:46:23.914992+00:00</att>
+        <att name="DELTA_T">60</att>
+        <att name="Deployment_date">12-Oct-2012 16:20:00</att>
+        <att name="DESCRIPTION">Deep Tripod</att>
+        <att name="EXPERIMENT">Elwha River Dam Removal</att>
+        <att name="experiment_id">ELW12</att>
+        <att name="featureType">timeSeries</att>
+        <att name="geospatial_lat_max" type="float">48.164867</att>
+        <att name="geospatial_lat_min" type="float">48.164867</att>
+        <att name="geospatial_lon_max" type="float">-123.58005</att>
+        <att name="geospatial_lon_min" type="float">-123.58005</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F7CR5RW8.ipynb; </att>
+        <att name="id">ELW12C5T03sc</att>
+        <att name="initial_instrument_height" type="double">1.49</att>
+        <att name="inst_number">ELW12C5T03</att>
+        <att name="INST_TYPE">Seabird Electronics SBE-16plus Seacat</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="instrument_serial_number">4553</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="latitude" type="double">48.164867</att>
+        <att name="LatLonDatum">NAD83</att>
+        <att name="longitude" type="double">-123.58005</att>
+        <att name="magnetic_variation" type="double">12.9</att>
+        <att name="metadata_link">https://doi.org/10.5066/F7CR5RW8</att>
+        <att name="MOORING">ELW12C5T</att>
+        <att name="moortype">Tripod</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="nominal_instrument_depth" type="double">47.01</att>
+        <att name="platform_type">Tripod</att>
+        <att name="PROGRAM">Puget Sound</att>
+        <att name="PROJECT">Elwha River</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="Recovery_date">25-Jun-2013 16:53:00</att>
+        <att name="Region">Puget Sound</att>
+        <att name="samp_rate" type="double">60.0</att>
+        <att name="SciPi">Jonathan Warrick</att>
+        <att name="Site">C5T</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="start_time">12-Oct-2012 16:20:01</att>
+        <att name="stop_time">25-Jun-2013 16:52:01</att>
+        <att name="summary">First Release: Aug 2017
+Revised: May 2018 (ver. 1.1)
+
+Time-series data of velocity, pressure, turbidity, conductivity, and temperature were collected near the mouth of the Elwha River, Washington, USA, from December 2010 through October 2014, for the Department of Interior&#x2019;s Elwha River Restoration project. As part of this project, the U.S. Geological Survey studied the effects of renewed sediment supplies on the coastal ecosystems before, during, and following the removal of two dams, Elwha and Glines Canyon, from the Elwha River. Removal of the dams reintroduced sediment stored in the reservoirs to the river, and the river moved much of this sediment to the coast. 
+ 
+Several benthic tripods were instrumented with oceanographic sensors to collect the time-series data. Initial deployment in December 2010 consisted of one tripod about 1 km east of the Elwha River mouth (Tripod A). In March of 2011, an identical tripod (Tripod B) was placed about 1 km west of the river mouth. A mooring was added to the western site in July 2012 to measure turbidity and conductivity near the surface. A third tripod was placed in deeper water (50 m) directly offshore of the river mouth in an attempt to characterize sediment gravity flows near the seafloor if they occurred (Tripod C). Exceptional sedimentation was observed near the original tripod site A during the winter of 2013-2014. As a result, the tripod was relocated further east in April 2013 and renamed Tripod D.
+
+Please check metadata and instrument information carefully for applicable time periods of specific data, as individual instrument deployment times and duration of the time series vary.
+
+The naming convention for the NetCDF files included in this release is a 12-character alphanumeric code (ELWYYJKLNNXX.nc) where:
+
+ELW is a 3-digit alphabetic-code for this experiment located at the mouth of the Elwha River
+YY is the 2 digit year at the time of deployment
+J is the location with respect to the river mouth [A, East (December 2010 to April 2013); B, West; C, Offshore; D, East (April 2013 to March 2014)]
+K is the deployment number (1-9; beginning and ending dates of each deployment are given below)
+L is the instrument package type (T, tripod; M, surface mooring)
+NN indicates the position of instrument on the surface mooring (01, nearest the surface; NN increases with depth)
+XX denotes the instrument or data type (wh, RDInstruments ADCP current data; wv, RDInstruments ADCP derived wave parameters; nx, Falmouth Scientific NXIC CTD; aq, Aquatec Aqualogger OBS; bl, RBR, Ltd CTD; sc, SeaBird Electonics SBE16+ CT)
+
+Some derived parameters are included in these data.
+
+Deployment dates:
+1. Dec 2010 to Mar 2011
+2. Mar 2011 to Sep 2011
+3. Sep 2011 to Mar 2012
+4. Mar 2012 to Aug 2012
+5. Aug 2012 to Jan 2013
+6. Jan 2013 to Jun 2013
+7. Jun 2013 to Dec 2013
+8. Dec 2013 to Mar 2014
+9. Mar 2014 to Oct 2014</att>
+        <att name="time_coverage_duration">P256DT0H32M0S</att>
+        <att name="time_coverage_end">2013-06-25T16:52:01</att>
+        <att name="time_coverage_resolution">P0DT0H1M0S</att>
+        <att name="time_coverage_start">2012-10-12T16:20:01</att>
+        <att name="title">Oceanographic measurements obtained offshore of the Elwha River delta in coordination with the Elwha River Restoration Project, Washington, USA, 2010-2014 - ELW12C5T03sc</att>
+        <att name="VAR_DESC">T:C</att>
+        <att name="WATER_DEPTH" type="double">48.5</att>
+        <att name="WATER_DEPTH_NOTE">Calculated from mean Pressure from ADCP on tripod</att>
+        <att name="WATER_DEPTH_source">Ships Echosounder</att>
+        <att name="Year" type="double">2012.0</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2020-07-14T17:46:23.915Z</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F7CR5RW8.ipynb;</att>
+        <att name="infoUrl">https://doi.org/10.5066/F7CR5RW8</att>
+        <att name="keywords">2010-2014, acoustic, adcp, C_51, coastal, common, conductivity, coordination, ctd, current, currents, data, delta, density, depth, doppler, earth, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Conductivity, Earth Science &gt; Oceans &gt; Salinity/Density &gt; Salinity, electrical, elw12c5t03sc, elwha, feature, feature_type_instance, format, geological, geology, identifier, instance, latitude, longitude, marine, measurement, measurements, network, obtained, ocean, oceanographic, oceanography, oceans, offshore, practical, profiler, program, project, psu, restoration, river, S_41, salinity, science, sea, sea_water_electrical_conductivity, sea_water_practical_salinity, sea_water_temperature, seawater, sediment transport, sensor, sonde, states, survey, T_28, temperature, time, type, unit, united, usa, usgs, velocity, washington, water, with</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="PROGRAM">null</att>
+        <att name="program">Puget Sound</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="start_time">null</att>
+        <att name="stop_time">null</att>
+        <att name="subsetVariables">depth, latitude, longitude, feature_type_instance</att>
+        <att name="summary">Oceanographic measurements obtained offshore of the Elwha River delta in coordination with the Elwha River Restoration Project, Washington, USA, 2010-2014 - ELW12C5T03sc. First Release: Aug 2017
+Revised: May 2018 (ver. 1.1)
+
+Time-series data of velocity, pressure, turbidity, conductivity, and temperature were collected near the mouth of the Elwha River, Washington, USA, from December 2010 through October 2014, for the Department of Interior&#39;s Elwha River Restoration project. As part of this project, the U.S. Geological Survey studied the effects of renewed sediment supplies on the coastal ecosystems before, during, and following the removal of two dams, Elwha and Glines Canyon, from the Elwha River. Removal of the dams reintroduced sediment stored in the reservoirs to the river, and the river moved much of this sediment to the coast. 
+ 
+Several benthic tripods were instrumented with oceanographic sensors to collect the time-series data. Initial deployment in December 2010 consisted of one tripod about 1 km east of the Elwha River mouth (Tripod A). In March of 2011, an identical tripod (Tripod B) was placed about 1 km west of the river mouth. A mooring was added to the western site in July 2012 to measure turbidity and conductivity near the surface. A third tripod was placed in deeper water (50 m) directly offshore of the river mouth in an attempt to characterize sediment gravity flows near the seafloor if they occurred (Tripod C). Exceptional sedimentation was observed near the original tripod site A during the winter of 2013-2014. As a result, the tripod was relocated further east in April 2013 and renamed Tripod D.
+
+Please check metadata and instrument information carefully for applicable time periods of specific data, as individual instrument deployment times and duration of the time series vary.
+
+The naming convention for the Network Common Data Format (NetCDF) files included in this release is a 12-character alphanumeric code (ELWYYJKLNNXX.nc) where:
+
+ELW is a 3-digit alphabetic-code for this experiment located at the mouth of the Elwha River
+YY is the 2 digit year at the time of deployment
+J is the location with respect to the river mouth [A, East (December 2010 to April 2013); B, West; C, Offshore; D, East (April 2013 to March 2014)]
+K is the deployment number (1-9; beginning and ending dates of each deployment are given below)
+L is the instrument package type (T, tripod; M, surface mooring)
+NN indicates the position of instrument on the surface mooring (01, nearest the surface; NN increases with depth)
+XX denotes the instrument or data type (wh, RDInstruments Acoustic Doppler Current Profiler (ADCP) current data; wv, RDInstruments ADCP derived wave parameters; nx, Falmouth Scientific NXIC Conductivity, Temperature, Depth (CTD); aq, Aquatec Aqualogger OBS; bl, RBR, Ltd CTD; sc, SeaBird Electonics SBE16+ CT)
+
+Some derived parameters are included in these data.
+
+Deployment dates:
+1. Dec 2010 to Mar 2011
+2. Mar 2011 to Sep 2011
+3. Sep 2011 to Mar 2012
+4. Mar 2012 to Aug 2012
+5. Aug 2012 to Jan 2013
+6. Jan 2013 to Jun 2013
+7. Jun 2013 to Dec 2013
+8. Dec 2013 to Mar 2014
+9. Mar 2014 to Oct 2014</att>
+        <att name="time_coverage_end">2013-06-25T16:52:01Z</att>
+        <att name="time_coverage_start">2012-10-12T16:20:01Z</att>
+        <att name="title">Oceanographic measurements obtained offshore of the Elwha River delta in coordination with the Elwha River Restoration Project, Washington, USA, 2010-2014, ELW12C5T03sc</att>
+        <att name="Year">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1024</att>
+            <att name="axis">T</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">minutes since 2012-10-12 16:20:01</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="units">minutes since 2012-10-12T16:20:01Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="epic_code" type="int">3</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="long_name">depth of sensor below mean water level</att>
+            <att name="positive">down</att>
+            <att name="standard_name">height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="source_name">z</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="DATUM">NAD83</att>
+            <att name="epic_code" type="int">500</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">lat</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="name">LAT</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="DATUM">NAD83</att>
+            <att name="epic_code" type="int">502</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">lon</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="name">LON</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>T_28</sourceName>
+        <destinationName>T_28</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1022</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">20</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">temp</att>
+            <att name="long_name">TEMPERATURE (C)          </att>
+            <att name="maximum" type="float">11.1664</att>
+            <att name="minimum" type="float">6.7346</att>
+            <att name="name">T</att>
+            <att name="serial_number">4553</att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="units">degree_C</att>
+            <att name="valid_range" type="floatList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">11.1664</att>
+            <att name="data_min" type="float">6.7346</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">TEMPERATURE (C)</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>C_51</sourceName>
+        <destinationName>C_51</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1022</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">51</att>
+            <att name="FORTRAN_format">f10.3</att>
+            <att name="generic_name">con</att>
+            <att name="long_name">CONDUCTIVITY             </att>
+            <att name="maximum" type="float">3.504067</att>
+            <att name="minimum" type="float">3.077569</att>
+            <att name="name">C</att>
+            <att name="serial_number">4553</att>
+            <att name="standard_name">sea_water_electrical_conductivity</att>
+            <att name="units">S/m</att>
+            <att name="valid_range" type="floatList">0.0 10.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">40.0</att>
+            <att name="colorBarMinimum" type="double">30.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">3.504067</att>
+            <att name="data_min" type="float">3.077569</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">CONDUCTIVITY</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>S_41</sourceName>
+        <destinationName>S_41</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1022</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">41</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">sal</att>
+            <att name="long_name">SALINITY (PSU)           </att>
+            <att name="maximum" type="float">33.5657</att>
+            <att name="minimum" type="float">29.2327</att>
+            <att name="name">S</att>
+            <att name="serial_number">4553</att>
+            <att name="standard_name">sea_water_salinity</att>
+            <att name="units">PSU</att>
+            <att name="valid_range" type="floatList">0.0 40.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">37.0</att>
+            <att name="colorBarMinimum" type="double">32.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">33.5657</att>
+            <att name="data_min" type="float">29.2327</att>
+            <att name="ioos_category">Salinity</att>
+            <att name="long_name">SALINITY (PSU)</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+            <att name="standard_name">sea_water_practical_salinity</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">longitude latitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

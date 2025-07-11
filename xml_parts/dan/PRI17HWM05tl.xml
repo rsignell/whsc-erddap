@@ -1,0 +1,250 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="PRI17HWM05tl">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-P9IXOHID/</fileDir>
+    <fileNameRegex>PRI17HWM05tl.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="clock_error" type="double">-10.0</att>
+        <att name="CollaboratingAgency">UPR Mayaguez</att>
+        <att name="COMPOSITE" type="double">0.0</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHIC</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="CruiseID">2017-618-FA</att>
+        <att name="DATA_CMT">Puerto Rico Mesophotic Reefs Hole-in-the-wall mooring thermistor at 30 mab</att>
+        <att name="DATA_ORIGIN">USGS WCMG Sed Trans Group</att>
+        <att name="DATA_SUB_TYPE">MOORED</att>
+        <att name="DATA_SUBTYPE">MOORED</att>
+        <att name="DATA_TYPE">TIME</att>
+        <att name="datasetID">PRI17HWM05tl</att>
+        <att name="date_created">2020-07-14T21:31:37.205037+00:00</att>
+        <att name="DELTA_T" type="double">5.0</att>
+        <att name="Deployment_date">27-July-2017 14:00</att>
+        <att name="DEPTH_CONST" type="double">0.0</att>
+        <att name="DESCRIPTION">Hole-In-The-Wall mooring</att>
+        <att name="DRIFTER" type="double">0.0</att>
+        <att name="EXPERIMENT">Guanica Bay + MCE</att>
+        <att name="experiment_id">PRI17</att>
+        <att name="featureType">timeSeries</att>
+        <att name="FILL_FLAG" type="double">1.0E35</att>
+        <att name="geospatial_lat_max" type="double">17.88437</att>
+        <att name="geospatial_lat_min" type="double">17.88437</att>
+        <att name="geospatial_lon_max" type="double">-67.02192</att>
+        <att name="geospatial_lon_min" type="double">-67.02192</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_P9IXOHID.ipynb; Logger data processed by processLogger</att>
+        <att name="id">PRI17HWM05tl</att>
+        <att name="initial_instrument_height" type="double">30.0</att>
+        <att name="INST_TYPE">RBR Solo-T Thermistor</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="instrument_manufacturer">RBR</att>
+        <att name="instrument_model">SoloT</att>
+        <att name="instrument_number">PRI17HWM05</att>
+        <att name="interval" type="double">5.0</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="latitude" type="double">17.88437</att>
+        <att name="longitude" type="double">-67.02192</att>
+        <att name="magnetic_variation" type="double">-12.75</att>
+        <att name="metadata_link">https://doi.org/10.5066/P9IXOHID</att>
+        <att name="MOORING">PRI17HWM</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="ncfilename">PRI17HWM05tl.nc</att>
+        <att name="nominal_instrument_depth" type="double">25.0</att>
+        <att name="platform_type">Subsurface</att>
+        <att name="POS_CONST" type="double">0.0</att>
+        <att name="PROGRAM">Coral Reefs</att>
+        <att name="PROJECT">Puerto Rico</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="raw_filename">076012_20180116_0803.rsk</att>
+        <att name="Recovery_date">07-Dec-2017 13:20</att>
+        <att name="Region">Caribbean Sea</att>
+        <att name="SciPi">Curt Storlazzi, Olivia Cheriton, Kurt Rosenberger</att>
+        <att name="serial_number" type="double">76012.0</att>
+        <att name="Site">HWM</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="start_time">2017-05-23 00:00:00.000</att>
+        <att name="summary">Time-series data of water surface elevation, waves, currents, temperature, and salinity collected between 17 May 2017 and 17 Jan 2018 off the southwest coast of Puerto Rico in support of a study on circulation and sediment transport dynamics over coral reefs. The data are available in NetCDF format, grouped together in zip files by instrument site location. A README.txt file details the files contained within each zip, including the file names, type of data collected, instrument that collected the data, depth, and start and end dates/times.</att>
+        <att name="time_coverage_duration">P132DT23H20M0S</att>
+        <att name="time_coverage_end">2017-12-07T13:20:00</att>
+        <att name="time_coverage_resolution">P0DT0H0M5S</att>
+        <att name="time_coverage_start">2017-07-27T14:00:00</att>
+        <att name="title">Time series data of oceanographic conditions from La Parguera, Puerto Rico, 2017-2018 Coral Reef Circulation and Sediment Dynamics Experiment - PRI17HWM05tl</att>
+        <att name="txt_filename">076012_20180116_0803_data.txt</att>
+        <att name="VAR_DESC">T_28</att>
+        <att name="VAR_FILL" type="double">1.0E35</att>
+        <att name="WATER_DEPTH" type="double">55.0</att>
+        <att name="WATER_DEPTH_datum">unknown</att>
+        <att name="WATER_DEPTH_SOURCE">divers</att>
+        <att name="WATER_MASS">?</att>
+        <att name="Year" type="double">2017.0</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2020-07-14T21:31:37.205Z</att>
+        <att name="infoUrl">https://doi.org/10.5066/P9IXOHID</att>
+        <att name="keywords">2017-2018, circulation, coastal, common, conditions, coral, data, depth, dynamics, earth, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, experiment, feature, feature_type_instance, format, geological, geology, identifier, instance, latitude, longitude, marine, measurement, network, ocean, oceanographic, oceanography, oceans, parguera, pri17hwm05tl, program, puerto, reef, rico, science, sea, sea_water_temperature, seawater, sediment, sediment transport, sensor, series, states, survey, T_28, temperature, time, time series, type, united, usgs, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="PROGRAM">null</att>
+        <att name="program">Coral Reefs</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="start_time">null</att>
+        <att name="subsetVariables">latitude, longitude, depth, feature_type_instance</att>
+        <att name="summary">Time series data of oceanographic conditions from La Parguera, Puerto Rico, 2017-2018 Coral Reef Circulation and Sediment Dynamics Experiment - PRI17HWM05tl. Time-series data of water surface elevation, waves, currents, temperature, and salinity collected between 17 May 2017 and 17 Jan 2018 off the southwest coast of Puerto Rico in support of a study on circulation and sediment transport dynamics over coral reefs. The data are available in Network Common Data Format (NetCDF) format, grouped together in zip files by instrument site location. A README.txt file details the files contained within each zip, including the file names, type of data collected, instrument that collected the data, depth, and start and end dates/times.</att>
+        <att name="time_coverage_end">2017-12-07T13:20:00Z</att>
+        <att name="time_coverage_start">2017-07-27T14:00:00Z</att>
+        <att name="title">Time series data of oceanographic conditions from La Parguera, Puerto Rico, 2017-2018 Coral Reef Circulation and Sediment Dynamics Experiment, PRI17HWM05tl</att>
+        <att name="WATER_DEPTH_datum">null</att>
+        <att name="WATER_MASS">null</att>
+        <att name="Year">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">T</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 2017-07-27 14:00:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="units">seconds since 2017-07-27T14:00:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="epic_code" type="double">500.0</att>
+            <att name="FORTRAN_format">F10.4</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="epic_code" type="double">502.0</att>
+            <att name="FORTRAN_format">F10.4</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="epic_code" type="double">3.0</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="long_name">mean water depth</att>
+            <att name="nominal_instrument_depth" type="double">25.0</att>
+            <att name="positive">down</att>
+            <att name="standard_name">height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="source_name">z</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>T_28</sourceName>
+        <destinationName>T_28</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="double">28.0</att>
+            <att name="FillValue_" type="double">1.0E35</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">temp</att>
+            <att name="initial_sensor_height" type="double">30.0</att>
+            <att name="long_name">TEMPERATURE (C)          </att>
+            <att name="maximum" type="double">29.9798195</att>
+            <att name="minimum" type="double">25.2410505</att>
+            <att name="name">T</att>
+            <att name="NOTE">ITS-1990 standard</att>
+            <att name="serial_number" type="double">76012.0</att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="type">EVEN</att>
+            <att name="units">degree_C</att>
+            <att name="valid_range" type="doubleList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="double">29.9798195</att>
+            <att name="data_min" type="double">25.2410505</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">TEMPERATURE (C)</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">latitude longitude z</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

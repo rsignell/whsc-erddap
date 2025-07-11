@@ -1,0 +1,13 @@
+cat header.xml \
+./xml_parts/cmg/*adcp*.xml \
+./xml_parts/cmg/nc/*.xml \
+./xml_parts/cmg/cdf/*.xml \
+./xml_parts/whoi/*.xml \
+./xml_parts/nmfs/*.xml \
+./xml_parts/dan/*.xml \
+./xml_parts/bryan/*.xml \
+./xml_parts/test/*.xml \
+footer.xml > datasets.xml
+
+# this used to be in the list but now we just do all in the cmg/nc directory
+# ./xml_parts/cmg/grandbay/*.xml \

@@ -1,0 +1,295 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="CCE15M1A02pt">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-F7FT8J7Q/</fileDir>
+    <fileNameRegex>CCE15M1A02pt.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="clock_error" type="double">22.0</att>
+        <att name="clock_error_units">Seconds</att>
+        <att name="CollaboratingAgency">MBARI NERC-UK</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHIC</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="CruiseID">2015-619-FA</att>
+        <att name="DATA_CMNT">CCE 2015 MS1 Pressure/Temperature on ADCP Sphere, Deployment A</att>
+        <att name="DATA_ORIGIN">USGS/PCMSC</att>
+        <att name="DATA_SUBTYPE">MOORED</att>
+        <att name="DATA_TYPE">TIME</att>
+        <att name="datasetID">CCE15M1A02pt</att>
+        <att name="date_created">2020-07-16T22:19:24.835021+00:00</att>
+        <att name="DELTA_T">180</att>
+        <att name="Deployment_date">06-Oct-2015 17:15</att>
+        <att name="DESCRIPT">Coordinated Canyon Experiment, 2015</att>
+        <att name="DESCRIPTION">300m mooring</att>
+        <att name="EXPERIMENT">CCE</att>
+        <att name="experiment_id">CCE15</att>
+        <att name="featureType">timeSeries</att>
+        <att name="geospatial_lat_max" type="float">36.79328</att>
+        <att name="geospatial_lat_min" type="float">36.79328</att>
+        <att name="geospatial_lon_max" type="float">-121.8446</att>
+        <att name="geospatial_lon_min" type="float">-121.8446</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F7FT8J7Q.ipynb; </att>
+        <att name="id">CCE15M1A02pt</att>
+        <att name="initial_instrument_height" type="double">65.0</att>
+        <att name="INST_TYPE">Seabird SBE-39</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="instrument_serial_number" type="double">127.0</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="latitude" type="double">36.79328</att>
+        <att name="latitude_units">degrees_north</att>
+        <att name="LatLonDatum">NAD83</att>
+        <att name="LoggerSerialNumber">127</att>
+        <att name="longitude" type="double">-121.8446</att>
+        <att name="longitude_units">degrees_east</att>
+        <att name="magnetic_variation" type="double">12.4</att>
+        <att name="metadata_link">https://doi.org/10.5066/F7FT8J7Q</att>
+        <att name="metafile_author">Joanne Ferreira, USGS PCMSC</att>
+        <att name="metafile_version" type="double">1.0</att>
+        <att name="MOORING">CCE15M1A</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="nominal_sensor_depth" type="double">203.89999999999998</att>
+        <att name="platform_type">Subsurface</att>
+        <att name="PROGRAM">Sediment Transport in Coastal Environments</att>
+        <att name="PROJECT">Monterey Canyon</att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="Recovery_date">17-Jan-2016 00:00</att>
+        <att name="Region">Monterey Bay</att>
+        <att name="samp_rate" type="double">180.0</att>
+        <att name="SciPi">Katie Coble, Kurt Rosenberger</att>
+        <att name="Site">MS1</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="start_time">06-Oct-2015 17:15:00</att>
+        <att name="stop_time">17-Jan-2016</att>
+        <att name="summary">Time-series data of water depth, velocity, turbidity, and temperature were acquired between 5 October 2015 and 21 March 2017 within the Monterey Canyon off of Monterey, CA, USA.
+
+In order to better understand the triggering, progression and evolution of turbidity currents in Monterey Submarine Canyon, an experiment was designed to directly measure velocity, suspended sediment and physical water properties (temperature, salinity and density) along the canyon axis during an 18-month period.
+
+Three moorings in the upper canyon (MS1, MS2, MS3) containing oceanographic instruments and Anderson- type sediment traps were deployed during three consecutive six-month periods (A: October 2015 - April 2016; B: April - October 2016; C: October 2016 - March 2017). In addition, a bottom platform to the South of the canyon head (MS0) housed instrumentation to measure currents and waves on the adjacent shelf. The mooring diagram image files are a generalized representation of the deployed instrumentation at each site, and are included as a visual aid for understanding the sampling environment. A text file of the specific sensors listing the parameters measured is also included.</att>
+        <att name="time_coverage_duration">P102DT6H45M0S</att>
+        <att name="time_coverage_end">2016-01-17T00:00:00</att>
+        <att name="time_coverage_resolution">P0DT0H3M0S</att>
+        <att name="time_coverage_start">2015-10-06T17:15:00</att>
+        <att name="title">Time-series oceanographic data from the Monterey Canyon, CA October 2015 - March 2017 - CCE15M1A02pt</att>
+        <att name="VAR_DESC">T:P</att>
+        <att name="WATER_DEPTH" type="double">268.9</att>
+        <att name="WATER_DEPTH_SOURCE">MBARI Multibeam Bathy</att>
+        <att name="WATER_DEPTH_source">MBARI Multibeam Bathy</att>
+        <att name="Year" type="double">2015.0</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2020-07-16T22:19:24.835Z</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_F7FT8J7Q.ipynb;</att>
+        <att name="infoUrl">https://doi.org/10.5066/F7FT8J7Q</att>
+        <att name="keywords">canyon, cce15m1a02pt, coastal, data, depth, earth, Earth Science &gt; Oceans &gt; Ocean Pressure &gt; Water Pressure, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, feature, feature_type_instance, geological, geology, identifier, instance, latitude, longitude, marine, measurement, monterey, ocean, oceanographic, oceanography, oceans, P_1, pressure, program, science, sea, sea_water_pressure, sea_water_temperature, seawater, sediment transport, sensor, series, states, survey, T_28, temperature, time, time-series, type, united, usgs, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="latitude_units">null</att>
+        <att name="license">[standard]</att>
+        <att name="longitude_units">null</att>
+        <att name="PROGRAM">null</att>
+        <att name="program">Sediment Transport in Coastal Environments</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="start_time">null</att>
+        <att name="stop_time">null</att>
+        <att name="subsetVariables">depth, latitude, longitude, feature_type_instance</att>
+        <att name="summary">Time-series oceanographic data from the Monterey Canyon, CA October 2015 - March 2017 - CCE15M1A02pt. Time-series data of water depth, velocity, turbidity, and temperature were acquired between 5 October 2015 and 21 March 2017 within the Monterey Canyon off of Monterey, CA, USA.
+
+In order to better understand the triggering, progression and evolution of turbidity currents in Monterey Submarine Canyon, an experiment was designed to directly measure velocity, suspended sediment and physical water properties (temperature, salinity and density) along the canyon axis during an 18-month period.
+
+Three moorings in the upper canyon (MS1, MS2, MS3) containing oceanographic instruments and Anderson- type sediment traps were deployed during three consecutive six-month periods (A: October 2015 - April 2016; B: April - October 2016; C: October 2016 - March 2017). In addition, a bottom platform to the South of the canyon head (MS0) housed instrumentation to measure currents and waves on the adjacent shelf. The mooring diagram image files are a generalized representation of the deployed instrumentation at each site, and are included as a visual aid for understanding the sampling environment. A text file of the specific sensors listing the parameters measured is also included.</att>
+        <att name="time_coverage_end">2016-01-17T00:00:00Z</att>
+        <att name="time_coverage_start">2015-10-06T17:15:00Z</att>
+        <att name="title">Time-series oceanographic data from the Monterey Canyon, CA October 2015, March 2017, CCE15M1A02pt</att>
+        <att name="Year">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1024</att>
+            <att name="axis">T</att>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">minutes since 2015-10-06 17:15:00</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="ioos_category">Time</att>
+            <att name="units">minutes since 2015-10-06T17:15:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="epic_code" type="int">3</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="long_name">depth of sensor below mean water level</att>
+            <att name="positive">down</att>
+            <att name="standard_name">height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="source_name">z</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="DATUM">NAD83</att>
+            <att name="epic_code" type="int">500</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">lat</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="name">LAT</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="DATUM">NAD83</att>
+            <att name="epic_code" type="int">502</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">lon</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="name">LON</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>T_28</sourceName>
+        <destinationName>T_28</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1023</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude z latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">20</att>
+            <att name="FORTRAN_format">f10.2</att>
+            <att name="generic_name">temp</att>
+            <att name="long_name">TEMPERATURE (C)          </att>
+            <att name="maximum" type="float">14.3003</att>
+            <att name="minimum" type="float">6.7173</att>
+            <att name="name">T</att>
+            <att name="serial_number">127</att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="units">degree_C</att>
+            <att name="valid_range" type="floatList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">14.3003</att>
+            <att name="data_min" type="float">6.7173</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="long_name">TEMPERATURE (C)</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>P_1</sourceName>
+        <destinationName>P_1</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_ChunkSizes" type="int">1023</att>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="comment">Mooring moved during deployment, finally wire broke.  Event data preserved - -  means are not representative.</att>
+            <att name="coordinates">longitude z latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="int">1</att>
+            <att name="FORTRAN_format">f10.1</att>
+            <att name="generic_name">depth</att>
+            <att name="long_name">PRESSURE (DB)          </att>
+            <att name="maximum" type="float">453.923</att>
+            <att name="minimum" type="float">0.236</att>
+            <att name="name">P</att>
+            <att name="serial_number">127</att>
+            <att name="standard_name">sea_water_pressure</att>
+            <att name="units">dbar</att>
+            <att name="valid_range" type="floatList">0.0 10000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_ChunkSizes">null</att>
+            <att name="colorBarMaximum" type="double">5000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">453.923</att>
+            <att name="data_min" type="float">0.236</att>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">PRESSURE (DB)</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">longitude z latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

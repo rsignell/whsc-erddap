@@ -1,0 +1,141 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="wind-BretonIsland20" active="true">
+    <reloadEveryNMinutes>60</reloadEveryNMinutes>
+    <updateEveryNMillis>10000</updateEveryNMillis>
+    <fileDir>/sand/usgs/users/bmccloskey/wind/</fileDir>
+    <fileNameRegex>BretonIsland20.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <!-- sourceAttributes>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="Conventions">CF-1.6</att>
+        <att name="featureType">timeSeries</att>
+        <att name="history">Generated using sofar-smart-mooring.py</att>
+        <att name="institution">U.S. Geological Survey</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="original_folder">wind</att>
+        <att name="title">STP Spotter Buoy. PROVISIONAL DATA SUBJECT TO REVISION.</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="cdm_data_type">TimeSeries</att>
+        <att name="Conventions">CF-1.6, COARDS, ACDD-1.3</att>
+        <att name="creator_name">U.S. Geological Survey</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="infoUrl">https://www.usgs.gov/</att>
+        <att name="keywords">buoy, code, currents, data, direction, feature_type_instance, geological, identifier, latitude, longitude, provisional, revision, seasurface, seasurfaceId, speed, spotter, station, stp, subject, survey, time, US</att>
+        <att name="license">[standard]</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v70</att>
+        <att name="subsetVariables">feature_type_instance</att>
+        <att name="summary">STP Spotter Buoy. PROVISIONAL DATA SUBJECT TO REVISION.</att>
+        <att name="testOutOfDate">now-1day</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="standard_name">time</att>
+            <att name="units">seconds since 2021-05-10 18:13:01</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="_FillValue" type="int">2147483647</att>
+            <att name="ioos_category">Time</att>
+            <att name="long_name">Time</att>
+            <att name="units">seconds since 2024-04-24T13:47:00Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>speed</sourceName>
+        <destinationName>speed</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Speed</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>direction</sourceName>
+        <destinationName>direction</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">360.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="ioos_category">Currents</att>
+            <att name="long_name">Direction</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>seasurfaceId</sourceName>
+        <destinationName>seasurfaceId</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="double">NaN</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Seasurface Id</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="long_name">latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Latitude</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>double</dataType>
+        <!-- sourceAttributes>
+            <att name="long_name">longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+            <att name="long_name">Longitude</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="long_name">station code</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Identifier</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+

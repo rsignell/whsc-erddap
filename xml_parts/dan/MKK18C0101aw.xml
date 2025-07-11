@@ -1,0 +1,596 @@
+<dataset type="EDDTableFromMultidimNcFiles" datasetID="MKK18C0101aw">
+    <reloadEveryNMinutes>10080</reloadEveryNMinutes>
+    
+    <fileDir>/sand/usgs/users/dnowacki/doi-P9FSG90O/</fileDir>
+    <fileNameRegex>MKK18C0101aw.nc</fileNameRegex>
+    <recursive>true</recursive>
+    <pathRegex>.*</pathRegex>
+    <metadataFrom>last</metadataFrom>
+    <standardizeWhat>0</standardizeWhat>
+    <removeMVRows>true</removeMVRows>
+    <sortFilesBySourceNames></sortFilesBySourceNames>
+    <fileTableInMemory>false</fileTableInMemory>
+    <accessibleViaFiles>true</accessibleViaFiles>
+    <!-- sourceAttributes>
+        <att name="AnalogInput1">NONE</att>
+        <att name="AnalogInput2">NONE</att>
+        <att name="AnalogPowerLevel">HIGH</att>
+        <att name="AnalogPowerOutput">DISABLED</att>
+        <att name="AverageInterval" type="double">300.0</att>
+        <att name="beam_angle" type="double">25.0</att>
+        <att name="beam_pattern">convex</att>
+        <att name="beam_width" type="double">1.7</att>
+        <att name="BeamAngle" type="double">25.0</att>
+        <att name="BeamPattern">convex</att>
+        <att name="BeamWidth" type="double">1.7</att>
+        <att name="bin_count" type="double">16.0</att>
+        <att name="bin_size" type="double">2.0</att>
+        <att name="blanking_distance" type="double">0.5</att>
+        <att name="BlankingDistance" type="double">0.5</att>
+        <att name="cdm_profile_variables">profile_index</att>
+        <att name="cdm_timeseries_variables">feature_type_instance, latitude, longitude</att>
+        <att name="CellSize" type="double">200.0</att>
+        <att name="center_first_bin" type="double">2.5</att>
+        <att name="clock_error" type="double">5.0</att>
+        <att name="clock_error_note">Number of seconds that instrument clock differed from GPS time. A positive value indicates lag, i.e., instrument clock was slow. A negative value indicates that instrument clock was fast.</att>
+        <att name="CollaboratingAgency">University of Western Australia</att>
+        <att name="Comments">Molokai 2018</att>
+        <att name="COMPOSITE" type="double">0.0</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3</att>
+        <att name="COORD_SYSTEM">GEOGRAPHIC</att>
+        <att name="CoordinateSystem">XYZ</att>
+        <att name="CREATION_DATE">25-Apr-2019 09:50:41</att>
+        <att name="creator_url">https://www.usgs.gov/</att>
+        <att name="CruiseID">2018-617-FA</att>
+        <att name="DATA_ORIGIN">USGS WCMG Sed Trans Group</att>
+        <att name="DATA_SUBTYPE">MOORED</att>
+        <att name="datasetID">MKK18C0101aw</att>
+        <att name="date_created">2019-04-25T09:50:41</att>
+        <att name="DELTA_T">3600</att>
+        <att name="Deployment_date">24-Jun-2018 20:40:00</att>
+        <att name="DeploymentName">MOLFR1</att>
+        <att name="DeploymentTime">6/20/2018</att>
+        <att name="DEPTH_CONST" type="double">0.0</att>
+        <att name="DESCRIPTION">Offshore Fore Reef AWAC</att>
+        <att name="DRIFTER" type="double">0.0</att>
+        <att name="EXPERIMENT">XReef </att>
+        <att name="experiment_id">MKK18</att>
+        <att name="featureType">timeSeriesProfile</att>
+        <att name="filename">MKK18C0101aw</att>
+        <att name="Frequency" type="double">600.0</att>
+        <att name="frequency" type="double">600.0</att>
+        <att name="geospatial_lat_max" type="float">21.081045</att>
+        <att name="geospatial_lat_min" type="float">21.081045</att>
+        <att name="geospatial_lon_max" type="float">-157.1548</att>
+        <att name="geospatial_lon_min" type="float">-157.1548</att>
+        <att name="HeadSerialNumber">WAV 6278</att>
+        <att name="history">Imported from ScienceBase data release and converted to CF using process_P9FSG90O.ipynb; Current velocity profile output from Nortek Aquapro software translated to NetCDF by AWAC2ncNative</att>
+        <att name="id">MKK18C0101aw</att>
+        <att name="initial_instrument_height" type="double">0.47</att>
+        <att name="initial_instrument_height_note">measured on dock</att>
+        <att name="inst_height" type="double">0.47</att>
+        <att name="INST_TYPE">Nortek AWAC</att>
+        <att name="inst_type">Nortek AWAC</att>
+        <att name="institution">USGS Coastal and Marine Geology Program</att>
+        <att name="instrument_depth" type="double">24.53</att>
+        <att name="instrument_serial_number">WPR 1519</att>
+        <att name="instrument_type">Nortek AWAC</att>
+        <att name="keywords">oceanography, sediment transport</att>
+        <att name="latitude" type="double">21.081046</att>
+        <att name="LatLonDatum">NAD83</att>
+        <att name="longitude" type="double">-157.154799</att>
+        <att name="magnetic_variation_applied" type="double">9.53</att>
+        <att name="magnetic_variation_at_site" type="double">9.53</att>
+        <att name="MeasurementLoad">25 &#37;</att>
+        <att name="metadata_link">https://doi.org/10.5066/P9FSG90O</att>
+        <att name="metadatafile_author">KJR</att>
+        <att name="metadatafile_name">runMKK1C01_AWAC</att>
+        <att name="metadatafile_version">0.0</att>
+        <att name="MOORING">MKK18C01</att>
+        <att name="naming_authority">gov.usgs.cmgp</att>
+        <att name="nominal_instrument_depth" type="double">25.055021786389716</att>
+        <att name="nominal_sensor_depth" type="double">24.53</att>
+        <att name="nominal_sensor_depth_note">WATER_DEPTH-initial_instrument_height</att>
+        <att name="NumberOfBeams" type="double">3.0</att>
+        <att name="NumberOfCells" type="double">16.0</att>
+        <att name="NumberOfPingsPerBurst" type="double">1.0</att>
+        <att name="platform_type">Grate Mount</att>
+        <att name="POS_CONST" type="double">0.0</att>
+        <att name="pred_accuracy" type="double">3.4</att>
+        <att name="PressRange" type="doubleList">0.0 100.0</att>
+        <att name="ProfileInterval" type="double">3600.0</att>
+        <att name="PROGRAM">Coral Reefs</att>
+        <att name="PROJECT">Molokai </att>
+        <att name="project">CMG_Portal</att>
+        <att name="publisher_url">https://www.usgs.gov/</att>
+        <att name="Recovery_date">18-Sep-2018 22:50:00</att>
+        <att name="Region">Hawaii</att>
+        <att name="Salinity">35.0 ppt</att>
+        <att name="salinity_set_by_user">35.0 ppt</att>
+        <att name="salinity_set_by_user_units">ppt</att>
+        <att name="SciPi">Curt Storlazzi, Kurt Rosenberger, Olivia Cheriton</att>
+        <att name="serial_number" type="double">6278.0</att>
+        <att name="Site">C01</att>
+        <att name="SoundSpeed">MEASURED</att>
+        <att name="source">USGS</att>
+        <att name="standard_name_vocabulary">CF Standard Name Table v66</att>
+        <att name="start_time">20-Jun-2018 00:02:30</att>
+        <att name="stop_time">20-Sep-2018 02:02:30</att>
+        <att name="summary">Coral reefs generate significant volumes of carbonate sediment that becomes the primary source of beach material along many low-latitude shorelines that protect hundreds of millions of people globally. Despite this fact, there is little understanding of the specific processes that transport the carbonate sediment produced on the outer portions of coral reefs to the shoreline, let alone how those processes may be affected by projected sea-level rise. To better constrain the influence of sea-level rise on waves and sediment transport over a fringing coral reef flat, an experiment was conducted across a large fringing reef off the south shore of Molokai, Hawai&#x2019;i. Here we provide data on water levels, waves, currents observed during this field effort. Additional data sets will be added as they become available.</att>
+        <att name="TempRange" type="doubleList">-4.0 40.0</att>
+        <att name="time_coverage_duration">P86DT1H0M0S</att>
+        <att name="time_coverage_end">2018-09-18T22:02:30</att>
+        <att name="time_coverage_resolution">P0DT1H0M0S</att>
+        <att name="time_coverage_start">2018-06-24T21:02:30</att>
+        <att name="title">Waiakane, Molokai, HI, 2018 Coral Reef Circulation and Sediment Dynamics Experiment - MKK18C0101aw</att>
+        <att name="transducer_offset_from_bottom" type="double">0.47</att>
+        <att name="TransMatrix" type="doubleList">1.5774 0.0 0.3677 -0.7891 -1.3662 0.3677 -0.7891 1.3662 0.3677</att>
+        <att name="TransmitPulseLength">2.00 m</att>
+        <att name="trim_method">Water Level</att>
+        <att name="VAR_DESC">u_1205:v_1206:w_1204:P_1:Tx_1211:AGC_1202:Hdg_1215:Ptch_1216:Roll_1217</att>
+        <att name="VelRange" type="double">1000.0</att>
+        <att name="WATER_DEPTH" type="double">25.525021786389715</att>
+        <att name="WATER_DEPTH_datum">MSL</att>
+        <att name="WATER_DEPTH_SOURCE">pressure data</att>
+        <att name="WATER_DEPTH_source">water depth = MSL from pressure sensor</att>
+        <att name="WATER_MASS">?</att>
+        <att name="WaveMeasurements">ENABLED</att>
+        <att name="Year" type="double">2018.0</att>
+    </sourceAttributes -->
+    <!-- Please specify the actual cdm_data_type (TimeSeries?) and related info below, for example...
+        <att name="cdm_timeseries_variables">station_id, longitude, latitude</att>
+        <att name="subsetVariables">station_id, longitude, latitude</att>
+    -->
+    <addAttributes>
+        <att name="AnalogInput1">null</att>
+        <att name="AnalogInput2">null</att>
+        <att name="cdm_data_type">TimeSeriesProfile</att>
+        <att name="comment">Molokai 2018</att>
+        <att name="Comments">null</att>
+        <att name="Conventions">CF-1.6, ACDD-1.3, COARDS</att>
+        <att name="CREATION_DATE">null</att>
+        <att name="creation_date">25-Apr-2019 09:50:41</att>
+        <att name="creator_name">USGS Coastal and Marine Geology Program</att>
+        <att name="creator_type">institution</att>
+        <att name="date_created">2019-04-25T09:50:41Z</att>
+        <att name="EXPERIMENT">XReef</att>
+        <att name="infoUrl">https://doi.org/10.5066/P9FSG90O</att>
+        <att name="keywords">agc, AGC_1202, angle, average, circulation, coastal, coral, currents, data, depth, dynamics, earth, Earth Science &gt; Oceans &gt; Ocean Circulation &gt; Ocean Currents, Earth Science &gt; Oceans &gt; Ocean Pressure &gt; Water Pressure, Earth Science &gt; Oceans &gt; Ocean Temperature &gt; Water Temperature, eastward, eastward_sea_water_velocity, echo, experiment, feature, feature_type_instance, geological, geology, Hdg_1215, heading, identifier, index, inst, instance, instrument, intensity, latitude, longitude, marine, measurement, mkk18c0101aw, molokai, northward, northward_sea_water_velocity, ocean, oceanography, oceans, orientation, P_1, pitch, platform, platform_orientation, platform_pitch_angle, platform_roll_angle, pressure, profile, profile_index, program, Ptch_1216, reef, roll, Roll_1217, science, sea, sea_water_pressure, sea_water_temperature, seawater, sediment, sediment transport, sensor, states, statistics, survey, temperature, time, transducer, Tx_1211, type, u_1205, united, upward, upward_sea_water_velocity, usgs, v_1206, velocity, vertical, w_1204, waiakane, water</att>
+        <att name="keywords_vocabulary">GCMD Science Keywords</att>
+        <att name="license">[standard]</att>
+        <att name="PROGRAM">null</att>
+        <att name="program">Coral Reefs</att>
+        <att name="PROJECT">null</att>
+        <att name="sourceUrl">(local files)</att>
+        <att name="start_time">null</att>
+        <att name="stop_time">null</att>
+        <att name="subsetVariables">latitude, longitude, feature_type_instance</att>
+        <att name="summary">Waiakane, Molokai, HI, 2018 Coral Reef Circulation and Sediment Dynamics Experiment - MKK18C0101aw. Coral reefs generate significant volumes of carbonate sediment that becomes the primary source of beach material along many low-latitude shorelines that protect hundreds of millions of people globally. Despite this fact, there is little understanding of the specific processes that transport the carbonate sediment produced on the outer portions of coral reefs to the shoreline, let alone how those processes may be affected by projected sea-level rise. To better constrain the influence of sea-level rise on waves and sediment transport over a fringing coral reef flat, an experiment was conducted across a large fringing reef off the south shore of Molokai, Hawai&#39;i. Here we provide data on water levels, waves, currents observed during this field effort. Additional data sets will be added as they become available.</att>
+        <att name="time_coverage_end">2018-09-18T22:02:30Z</att>
+        <att name="time_coverage_start">2018-06-24T21:02:30Z</att>
+        <att name="title">Waiakane, Molokai, HI, 2018 Coral Reef Circulation and Sediment Dynamics Experiment, MKK18C0101aw</att>
+        <att name="WATER_MASS">null</att>
+        <att name="Year">null</att>
+    </addAttributes>
+    <dataVariable>
+        <sourceName>time</sourceName>
+        <destinationName>time</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="calendar">proleptic_gregorian</att>
+            <att name="long_name">time of measurement</att>
+            <att name="standard_name">time</att>
+            <att name="units">hours since 2018-06-24 21:02:30</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="ioos_category">Time</att>
+            <att name="units">hours since 2018-06-24T21:02:30Z</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>latitude</sourceName>
+        <destinationName>latitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Y</att>
+            <att name="epic_code" type="double">500.0</att>
+            <att name="FORTRAN_format">F10.4</att>
+            <att name="long_name">sensor latitude</att>
+            <att name="standard_name">latitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_north</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">90.0</att>
+            <att name="colorBarMinimum" type="double">-90.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>longitude</sourceName>
+        <destinationName>longitude</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">X</att>
+            <att name="epic_code" type="double">502.0</att>
+            <att name="FORTRAN_format">F10.4</att>
+            <att name="long_name">sensor longitude</att>
+            <att name="standard_name">longitude</att>
+            <att name="type">EVEN</att>
+            <att name="units">degrees_east</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">180.0</att>
+            <att name="colorBarMinimum" type="double">-180.0</att>
+            <att name="ioos_category">Location</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>z</sourceName>
+        <destinationName>depth</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="axis">Z</att>
+            <att name="epic_code" type="double">3.0</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="double">0.47</att>
+            <att name="long_name">mean water depth</att>
+            <att name="positive">down</att>
+            <att name="sensor_depth" type="double">25.055021786389716</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">height</att>
+            <att name="type">EVEN</att>
+            <att name="units">m</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">8000.0</att>
+            <att name="colorBarMinimum" type="double">-8000.0</att>
+            <att name="colorBarPalette">TopographyDepth</att>
+            <att name="ioos_category">Location</att>
+            <att name="source_name">z</att>
+            <att name="standard_name">depth</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>u_1205</sourceName>
+        <destinationName>u_1205</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1205.0</att>
+            <att name="generic_name">u</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">Eastward Velocity</att>
+            <att name="maximum" type="float">96.43004</att>
+            <att name="minimum" type="float">-118.28378</att>
+            <att name="name">u</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">eastward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">96.43004</att>
+            <att name="data_min" type="float">-118.28378</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>v_1206</sourceName>
+        <destinationName>v_1206</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1206.0</att>
+            <att name="generic_name">v</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">Northward Velocity</att>
+            <att name="maximum" type="float">87.02317</att>
+            <att name="minimum" type="float">-80.00573</att>
+            <att name="name">v</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">northward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">87.02317</att>
+            <att name="data_min" type="float">-80.00573</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>w_1204</sourceName>
+        <destinationName>w_1204</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1204.0</att>
+            <att name="generic_name">w</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">Vertical Velocity</att>
+            <att name="maximum" type="float">4.3495016</att>
+            <att name="minimum" type="float">-7.35277</att>
+            <att name="name">w</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">upward_sea_water_velocity</att>
+            <att name="units">cm/s</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">0.5</att>
+            <att name="colorBarMinimum" type="double">-0.5</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">4.3495016</att>
+            <att name="data_min" type="float">-7.35277</att>
+            <att name="ioos_category">Currents</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>P_1</sourceName>
+        <destinationName>P_1</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1.0</att>
+            <att name="FORTRAN_format">F10.1</att>
+            <att name="generic_name">depth</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">PRESSURE (DB)          </att>
+            <att name="maximum" type="float">25.633</att>
+            <att name="minimum" type="float">24.687</att>
+            <att name="name">P</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">sea_water_pressure</att>
+            <att name="type">EVEN</att>
+            <att name="units">dbar</att>
+            <att name="valid_range" type="floatList">0.0 10000.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">5000.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">25.633</att>
+            <att name="data_min" type="float">24.687</att>
+            <att name="ioos_category">Pressure</att>
+            <att name="long_name">PRESSURE (DB)</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Tx_1211</sourceName>
+        <destinationName>Tx_1211</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1211.0</att>
+            <att name="FORTRAN_format">F10.2</att>
+            <att name="generic_name">temp</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">instrument Transducer Temp.</att>
+            <att name="maximum" type="float">27.36</att>
+            <att name="minimum" type="float">25.53</att>
+            <att name="name">T</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">sea_water_temperature</att>
+            <att name="type">EVEN</att>
+            <att name="units">degree_C</att>
+            <att name="valid_range" type="floatList">0.0 100.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">32.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">27.36</att>
+            <att name="data_min" type="float">25.53</att>
+            <att name="ioos_category">Temperature</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>AGC_1202</sourceName>
+        <destinationName>AGC_1202</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1202.0</att>
+            <att name="generic_name">AGC</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">Average Echo Intensity (AGC)</att>
+            <att name="maximum" type="float">203.66667</att>
+            <att name="minimum" type="float">59.333332</att>
+            <att name="name">AGC</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="units">counts</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">100.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">203.66667</att>
+            <att name="data_min" type="float">59.333332</att>
+            <att name="ioos_category">Statistics</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+            <att name="units">count</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Hdg_1215</sourceName>
+        <destinationName>Hdg_1215</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1215.0</att>
+            <att name="generic_name">hdg</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">INST Heading             </att>
+            <att name="maximum" type="float">99.83</att>
+            <att name="minimum" type="float">98.729996</att>
+            <att name="name">Hdg</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">platform_orientation</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="floatList">0.0 360.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">400.0</att>
+            <att name="colorBarMinimum" type="double">0.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">99.83</att>
+            <att name="data_min" type="float">98.729996</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">INST Heading</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Ptch_1216</sourceName>
+        <destinationName>Ptch_1216</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1216.0</att>
+            <att name="generic_name">ptch</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">INST Pitch             </att>
+            <att name="maximum" type="float">1.7</att>
+            <att name="minimum" type="float">0.5</att>
+            <att name="name">Ptch</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">platform_pitch_angle</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="floatList">-180.0 180.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">200.0</att>
+            <att name="colorBarMinimum" type="double">-200.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">1.7</att>
+            <att name="data_min" type="float">0.5</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">INST Pitch</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>Roll_1217</sourceName>
+        <destinationName>Roll_1217</destinationName>
+        <dataType>float</dataType>
+        <!-- sourceAttributes>
+            <att name="_FillValue" type="float">1.0E35</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+            <att name="epic_code" type="float">1217.0</att>
+            <att name="generic_name">roll</att>
+            <att name="height_depth_units">m</att>
+            <att name="initial_sensor_height" type="float">0.47</att>
+            <att name="long_name">INST Roll             </att>
+            <att name="maximum" type="float">1.0</att>
+            <att name="minimum" type="float">0.2</att>
+            <att name="name">Roll</att>
+            <att name="sensor_depth" type="float">25.055021</att>
+            <att name="sensor_type">Nortek AWAC</att>
+            <att name="serial_number">WAV 6278</att>
+            <att name="standard_name">platform_roll_angle</att>
+            <att name="units">degrees</att>
+            <att name="valid_range" type="floatList">-180.0 180.0</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="colorBarMaximum" type="double">200.0</att>
+            <att name="colorBarMinimum" type="double">-200.0</att>
+            <att name="coordinates">null</att>
+            <att name="data_max" type="float">1.0</att>
+            <att name="data_min" type="float">0.2</att>
+            <att name="ioos_category">Unknown</att>
+            <att name="long_name">INST Roll</att>
+            <att name="maximum">null</att>
+            <att name="minimum">null</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>feature_type_instance</sourceName>
+        <destinationName>feature_type_instance</destinationName>
+        <dataType>String</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">timeseries_id</att>
+            <att name="coordinates">longitude latitude</att>
+            <att name="coverage_content_type">physicalMeasurement</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Feature Type Instance</att>
+        </addAttributes>
+    </dataVariable>
+    <dataVariable>
+        <sourceName>profile_index</sourceName>
+        <destinationName>profile_index</destinationName>
+        <dataType>int</dataType>
+        <!-- sourceAttributes>
+            <att name="cf_role">profile_id</att>
+            <att name="coordinates">longitude latitude</att>
+        </sourceAttributes -->
+        <addAttributes>
+            <att name="coordinates">null</att>
+            <att name="ioos_category">Identifier</att>
+            <att name="long_name">Profile Index</att>
+        </addAttributes>
+    </dataVariable>
+</dataset>
+
+
